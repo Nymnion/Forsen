@@ -84,11 +84,12 @@ body {
   
   header {
     background-color: rgba(72, 82, 104, 0.5); 
-
+    backdrop-filter: blur(5.9px);
     color: #fff;
     text-align: center;
     padding: 1.5rem 0;
     position: fixed;
+    border-radius: 0 0 50px 50px;
     top: 0;
     left: 0;
     width: 100%;
@@ -200,7 +201,7 @@ body {
   }
   
   .contact-form button[type="submit"] {
-    background-color: #3498db; /* Change this color to match Forsen's branding */
+    background-color: #69a8d2; /* Change this color to match Forsen's branding */
     color: #fff;
     padding: 0.5rem;
     font-size: 1rem;
@@ -208,7 +209,7 @@ body {
   }
   
   .contact-form button[type="submit"]:hover {
-    background-color: #2980b9; /* Change this color to match Forsen's branding */
+    background-color: #789eb8; /* Change this color to match Forsen's branding */
   }
   
   /* Quiz page */
@@ -337,7 +338,7 @@ body {
   }
 
 .line-button {
-    background-color: #007BFF;
+    background-color: #496078;
     border: none;
     color: white;
     text-align: center;
@@ -351,7 +352,7 @@ body {
 
 
   .line-button:hover {
-    background-color: #0056b3;
+    background-color: #77a2d0;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   }
   
