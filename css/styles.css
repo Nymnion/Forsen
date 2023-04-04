@@ -1,18 +1,15 @@
 /* General styles */
 body {
+  background-color: #6787b5;
 
+  background-color: #425877;
+  background-image: url('../images/bg.png');
 
-    background-color: #6787b5;
-
-    background-color: #425877;
-    background-image: url('../images/bg.png');
-
-
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin-top: 5.0rem;
-    cursor: url('../images/cursor_regular.png'), auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 5rem;
+  cursor: url('../images/cursor_regular.png'), auto;
 }
 
 a:hover,
@@ -20,595 +17,625 @@ a:hover,
 .contact-form button:hover,
 .line-button:hover,
 .contact-form input:hover {
-    cursor: url('../images/cursor_hover.png'), pointer;
+  cursor: url('../images/cursor_hover.png'), pointer;
 }
 
 h1 {
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 62px;
-    font-weight: 800;
-    line-height: 72px;
-    margin: 0 0 24px;
-    text-align: center;
-    text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-
 
 h2 {
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 27px;
-    font-weight: 800;
-    line-height: 72px;
-    margin: 0 0 24px;
-    text-align: center;
-    text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-
-
 
 h3,
 h4,
 h5,
 h6 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 a {
-    color: #3498db;
-    text-decoration: none;
+  color: #3498db;
+  text-decoration: none;
 }
 
 .container {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #f5f5f5;
-    transition: all 0.3s ease;
-
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f5f5f5;
+  transition: all 0.3s ease;
 }
-
-
 
 .video-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
 }
-
-
 
 .line-container {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 300px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: bold;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: bold;
 }
-
-
 
 /* Header */
 
-
 header {
-    background-color: rgba(72, 82, 104, 0.5);
-    backdrop-filter: blur(5.9px);
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem 0;
-    position: fixed;
-    border-radius: 0 0 50px 50px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    /* This will ensure the header is displayed on top of other elements */
+  background-color: rgba(72, 82, 104, 0.5);
+  backdrop-filter: blur(5.9px);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  position: fixed;
+  border-radius: 0 0 50px 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* This will ensure the header is displayed on top of other elements */
 }
 
 header a {
-    color: #fff;
-    padding: 0 1rem;
+  color: #fff;
+  padding: 0 1rem;
 }
 
 header a:hover {
-    color: #3498db;
-    /* Change this color to match Forsen's branding */
+  color: #3498db;
+  /* Change this color to match Forsen's branding */
 }
-
-
 
 /* Hero slider */
 .hero-slider {
-    width: 100%;
-    height: 500px;
-    /* You can adjust the height as needed */
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 500px;
+  /* You can adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .hero-slider img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s;
-    object-fit: cover;
-    /* This will make sure the images maintain their aspect ratio and cover the slider area */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+  object-fit: cover;
+  /* This will make sure the images maintain their aspect ratio and cover the slider area */
 }
 
 .hero-slider img.active {
-    opacity: 1;
+  opacity: 1;
 }
 
-
 .hero-slider-control {
-    position: absolute;
-    top: 50%;
-    background-color: rgba(36, 42, 45, 0.5);
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-    border: none;
-    z-index: 10;
-    transform: translateY(-50%);
-    transition: background-color 0.3s;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(36, 42, 45, 0.5);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  border: none;
+  z-index: 10;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
 }
 
 .hero-slider-control:hover {
-    background-color: rgba(147, 176, 208, 0.8);
+  background-color: rgba(147, 176, 208, 0.8);
 }
 
 .hero-slider-control.hero-slider-prev {
-    left: 1rem;
+  left: 1rem;
 }
 
 .hero-slider-control.hero-slider-next {
-    right: 1rem;
+  right: 1rem;
 }
-
 
 /* About page */
 .about {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 /* Social media links */
 .social-links {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
 .social-links a {
-    font-size: 2rem;
-    color: #333;
-    margin: 0 1rem;
+  font-size: 2rem;
+  color: #333;
+  margin: 0 1rem;
 }
 
 .social-links a:hover {
-    color: #3498db;
-    /* Change this color to match Forsen's branding */
+  color: #3498db;
+  /* Change this color to match Forsen's branding */
 }
 
 /* Contact page */
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 2rem auto;
 }
 
 .contact-form label {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
+.contact-form input[type='text'],
+.contact-form input[type='email'],
 .contact-form textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-    width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
 }
 
-.contact-form button[type="submit"] {
-    background-color: #69a8d2;
-    /* Change this color to match Forsen's branding */
-    color: #fff;
-    padding: 0.5rem;
-    font-size: 1rem;
+.contact-form button[type='submit'] {
+  background-color: #69a8d2;
+  /* Change this color to match Forsen's branding */
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
-.contact-form button[type="submit"]:hover {
-    background-color: #789eb8;
-    /* Change this color to match Forsen's branding */
+.contact-form button[type='submit']:hover {
+  background-color: #789eb8;
+  /* Change this color to match Forsen's branding */
 }
 
 /* Quiz page */
 .quiz {
-    padding-top: 100px;
-    width: 30rem;
-    height: 15rem;
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 30px;
+  padding-top: 100px;
+  width: 30rem;
+  height: 15rem;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 30px;
 }
 
 .question-container {
-    width: 80%;
-    height: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid darkgray;
-    border-radius: 25px;
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid darkgray;
+  border-radius: 25px;
 }
-
 
 .options-container {
-    width: 80%;
-    height: 12rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+  width: 80%;
+  height: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
-
 .quiz-details-container {
-    width: 80%;
-    height: 4rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 80%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .quiz-options-container {
-    width: 80%;
-    height: 12rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+  width: 80%;
+  height: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .score,
 .timer {
-    font-size: 24px;
-    margin: 10px;
+  font-size: 24px;
+  margin: 10px;
 }
 
 .question {
-    font-size: 30px;
-    margin: 20px;
+  font-size: 30px;
+  margin: 20px;
 }
 
 .answers {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-
-
 .answer {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-    header a {
-        display: block;
-        padding: 0.5rem 0;
-    }
+  header a {
+    display: block;
+    padding: 0.5rem 0;
+  }
 }
-
 
 .table-responsive {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-
 .table-forsen {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .table-forsen th,
 .table-forsen td {
-    border: 1px solid #cccccc;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid #cccccc;
+  padding: 8px;
+  text-align: left;
 }
 
 .table-forsen th {
-    background-color: #404040;
-    /* Adjust this color to match your website */
-    color: #ffffff;
-    font-weight: bold;
+  background-color: #404040;
+  /* Adjust this color to match your website */
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .table-forsen tr:nth-child(even) {
-    background-color: #575863;
+  background-color: #575863;
 }
 
 .table-forsen tr:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .line-button {
-    background-color: #496078;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    padding: 12px 24px;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: #496078;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-
 .line-button:hover {
-    background-color: #77a2d0;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  background-color: #77a2d0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 .line-button:focus {
-    outline: none;
+  outline: none;
 }
-
 
 /* Footer Styles */
 footer {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-
-
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 20px;
-
+  padding: 20px;
 }
 
 .socials {
-    text-align: center;
-    margin-right: 20px;
+  text-align: center;
+  margin-right: 20px;
 }
 
 .socials h3 {
-    color: #fff;
-    margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .socials ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .socials li {
-    display: inline-block;
-    margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .socials a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 .socials a:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 .home-link {
-    text-align: center;
+  text-align: center;
 }
 
 .home-link a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 .home-link a:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 /* Navigation Styles */
 nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-buttons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .nav-buttons li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .nav-buttons a {
-    color: #13294b;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 10px 20px;
-    display: inline-block;
-    background-color: #d8e9f7;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  color: #13294b;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #d8e9f7;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .nav-buttons a:hover {
-    background-color: #73b4dc;
-    color: #e7f6fa;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26), 0 5px 10px rgba(0, 0, 0, 0.33);
+  background-color: #73b4dc;
+  color: #e7f6fa;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26), 0 5px 10px rgba(0, 0, 0, 0.33);
 }
-
-
-
-
 
 /* Style the form container */
 .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f5f5f5;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
 }
 
 /* Style the form fields */
 .contact-form label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
+.contact-form input[type='text'],
+.contact-form input[type='email'],
 .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 /* Style the form submit button */
-.contact-form input[type="submit"] {
-    background-color: #6e76a1;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+.contact-form input[type='submit'] {
+  background-color: #6e76a1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.contact-form input[type="submit"]:hover {
-    background-color: #8086bb;
+.contact-form input[type='submit']:hover {
+  background-color: #8086bb;
 }
 
 /* Style the form success message */
 .contact-form .success {
-    color: rgb(104, 116, 168);
-    font-weight: bold;
-    margin-top: 15px;
+  color: rgb(104, 116, 168);
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 .slide {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .active-slide {
-    opacity: 1;
-    z-index: 2;
+  opacity: 1;
+  z-index: 2;
 }
 
 .quiz-container {
-    position: relative;
-    height: 200px;
-    margin-top: 40px;
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
 }
 
-
 .chat {
-    position: fixed;
-    /* position the hover element relative to the container */
-    right: 1%;
-    /* place the hover element immediately after the main content */
-    top: 40%;
-    /* align the hover element at the top of the container */
-    width: 21%;
-    /* adjust the width of the hover element as needed */
-    background-color: #ddd;
-    /* style the hover element, e.g., background-color, etc. */
-    padding: 1rem;
-    height: 38%;
-    background: rgba(255, 255, 255, 0.33);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.6px);
-    -webkit-backdrop-filter: blur(5.6px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding-top: 2%;
-    margin-left: 1rem;
-    /* add some space between the main content and the hover element */
+  position: fixed;
+  /* position the hover element relative to the container */
+  right: 1%;
+  /* place the hover element immediately after the main content */
+  top: 40%;
+  /* align the hover element at the top of the container */
+  width: 21%;
+  /* adjust the width of the hover element as needed */
+  background-color: #ddd;
+  /* style the hover element, e.g., background-color, etc. */
+  padding: 1rem;
+  height: 38%;
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 2%;
+  margin-left: 1rem;
+  /* add some space between the main content and the hover element */
+}
+
+@media screen and (max-width: 600px) {
+  .chat {
+    display: none;
+  }
+}
+
+/*global css file pepeLaugh*/
+
+.animateEasterEgg {
+  animation: x 0.6s infinite alternate;
+}
+
+@keyframes x {
+  25% {
+    transform: translate(-50%, -25%);
+  }
+  50% {
+    transform: translate(0%, 0%);
+  }
+  75% {
+    transform: translate(50%, -25%);
+  }
+}
+
+/* advice friend in bottom left */
+#adviceFriend {
+  position: fixed;
+  bottom: 0;
+  left: -200%;
+  opacity: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  transition: left 0.5s ease-out, opacity 0.5s ease-out;
+}
+.advicePopup {
+  background: #ddd;
+  color: rgb(36, 42, 45);
+  border-color: rgb(36, 42, 45);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 0.85rem;
+  max-width: 50%;
+  min-height: 24px;
+  margin-left: 10px;
+  position: relative;
+}
+.advicePopup::before {
+  content: '';
+  position: absolute;
+  bottom: 12px;
+  left: -24px;
+  z-index: 2;
+  border: 12px solid transparent;
+  border-right: 12px solid rgb(36, 42, 45);
+}
+#adviceFriend.active {
+  left: 0;
+  opacity: 1;
+}
+@media all and (max-width: 400px) {
+  #adviceFriend img {
+    width: 50px;
+    height: 50px;
+  }
 }
