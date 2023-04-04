@@ -123,7 +123,7 @@ body {
   
   .hero-slider img {
     width: 100%;
-    height: auto;
+    height: 100%;
     position: absolute;
     opacity: 0;
     transition: opacity 1s;
@@ -295,18 +295,6 @@ body {
       display: block;
       padding: 0.5rem 0;
     }
-  }
-  
-  .hero-slider img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s;
-  }
-  
-  .hero-slider img.active {
-    opacity: 1;
   }
 
   .table-responsive {
