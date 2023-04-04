@@ -125,13 +125,13 @@ header a {
     color: #fff;
     padding: 0 1rem;
   }
-  
+
   header a:hover {
     color: #3498db; /* Change this color to match Forsen's branding */
   }
-  
-  
-  
+
+
+
   /* Hero slider */
   .hero-slider {
     width: 100%;
@@ -575,4 +575,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 padding-top: 2%;
     margin-left: 1rem;
     /* add some space between the main content and the hover element */
+}
+
+@media screen and (max-width: 600px) {
+    .chat {
+        display: none;
+    }
 }
