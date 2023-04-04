@@ -6,7 +6,22 @@ body {
     color: #333;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1 { color: #ffffff; font-family: 'Raleway',sans-serif;
+     font-size: 62px; font-weight: 800; 
+     line-height: 72px; margin: 0 0 24px;
+      text-align: center; text-transform: uppercase; }
+
+
+  
+      h2 { color: #ffffff; font-family: 'Raleway',sans-serif;
+        font-size: 27px; font-weight: 800; 
+        line-height: 72px; margin: 0 0 24px;
+         text-align: center; text-transform: uppercase; }
+
+
+
+
+  h3, h4, h5, h6 {
     font-weight: bold;
   }
   
@@ -16,11 +31,19 @@ body {
   }
   
   .container {
-    background-color:#6a7997;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    background-color: #6a7997;
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
   }
+  
   
   /* Header */
   header {
@@ -41,15 +64,52 @@ body {
   
   /* Hero slider */
   .hero-slider {
-    width: 100%;
-    height: 500px;
+    width: 63%;
+    height: 500px; /* You can adjust the height as needed */
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
   }
   
   .hero-slider img {
     width: 100%;
     height: auto;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    object-fit: cover; /* This will make sure the images maintain their aspect ratio and cover the slider area */
+  }
+  
+  .hero-slider img.active {
+    opacity: 1;
+  }
+
+
+
+  .hero-slider-control {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateY(-50%);
+  }
+  
+  .hero-slider-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .hero-slider-control.hero-slider-prev {
+    left: 1rem;
+  }
+  
+  .hero-slider-control.hero-slider-next {
+    right: 1rem;
   }
   
   /* About page */
@@ -144,3 +204,94 @@ body {
   .hero-slider img.active {
     opacity: 1;
   }
+
+
+  .table-forsen {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  .table-forsen th,
+  .table-forsen td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table-forsen th {
+    background-color: #404040; /* Adjust this color to match your website */
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .table-forsen tr:nth-child(even) {
+    background-color: #575863;
+  }
+  
+  .table-forsen tr:hover {
+    background-color: #ddd;
+  }
+
+
+
+  /* Footer Styles */
+  footer {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #576a83;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .socials {
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .socials h3 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .socials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .socials li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .socials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .socials a:hover {
+    color: #1da1f2;
+  }
+  
+  .home-link {
+    text-align: center;
+  }
+  
+  .home-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .home-link a:hover {
+    color: #1da1f2;
+  }
+  
+  
