@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    margin-top: 5.0rem;
   }
   
   h1 { color: #ffffff; font-family: 'Raleway',sans-serif;
@@ -44,6 +45,20 @@ body {
     color: #fff;
   }
 
+  
+  .video-container {
+    background-color: #6a7997;
+    border-radius: 10px;
+    border: 2px solid #333;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+  }
 
 
     
@@ -65,11 +80,20 @@ body {
   
   
   /* Header */
+
+  
   header {
-    background-color: #222; /* Change this color to match Forsen's branding */
+    background-color: rgba(72, 82, 104, 0.5); 
+    backdrop-filter: blur(5.9px);
     color: #fff;
     text-align: center;
     padding: 1.5rem 0;
+    position: fixed;
+    border-radius: 0 0 50px 50px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* This will ensure the header is displayed on top of other elements */
   }
   
   header a {
@@ -80,6 +104,8 @@ body {
   header a:hover {
     color: #3498db; /* Change this color to match Forsen's branding */
   }
+  
+  
   
   /* Hero slider */
   .hero-slider {
@@ -175,7 +201,7 @@ body {
   }
   
   .contact-form button[type="submit"] {
-    background-color: #3498db; /* Change this color to match Forsen's branding */
+    background-color: #69a8d2; /* Change this color to match Forsen's branding */
     color: #fff;
     padding: 0.5rem;
     font-size: 1rem;
@@ -183,7 +209,7 @@ body {
   }
   
   .contact-form button[type="submit"]:hover {
-    background-color: #2980b9; /* Change this color to match Forsen's branding */
+    background-color: #789eb8; /* Change this color to match Forsen's branding */
   }
   
   /* Quiz page */
@@ -312,7 +338,7 @@ body {
   }
 
 .line-button {
-    background-color: #007BFF;
+    background-color: #496078;
     border: none;
     color: white;
     text-align: center;
@@ -326,7 +352,7 @@ body {
 
 
   .line-button:hover {
-    background-color: #0056b3;
+    background-color: #77a2d0;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -395,7 +421,7 @@ body {
   }
   
   /* Navigation Styles */
-nav {
+  nav {
     display: flex;
     justify-content: center;
   }
@@ -412,35 +438,25 @@ nav {
   }
   
   .nav-buttons a {
-    color: #007acc;
+    color: #13294b;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-buttons a:hover {
-    color: #1da1f2;
-  }
-  
-  /* Adjust the following values as necessary to match your desired button appearance */
-  .nav-buttons li:not(:last-child) {
-    margin-right: 15px;
-  }
-  
-  .nav-buttons a {
+    font-weight: 600;
+    padding: 10px 20px;
     display: inline-block;
-    padding: 8px 12px;
-    background-color: #9ea6c9;
-    border: 2px solid #007acc;
-    border-radius: 3px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    background-color: #d8e9f7;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
   }
   
   .nav-buttons a:hover {
-    background-color: #007acc;
-    border-color: #007acc;
-    color: #fff;
+    background-color: #73b4dc;
+    color: #e7f6fa;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26), 0 5px 10px rgba(0, 0, 0, 0.33);
   }
+  
   
 
 
