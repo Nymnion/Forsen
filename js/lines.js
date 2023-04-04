@@ -1739,10 +1739,6 @@ document.addEventListener('DOMContentLoaded', function () {
       line: 'rappers delight',
     },
     {
-      url: 'https://github.com/badoge/soundboard/blob/master/forsen/random%20singing/README.md?raw=true',
-      line: 'README.md',
-    },
-    {
       url: 'https://github.com/badoge/soundboard/blob/master/forsen/random%20singing/real human being.mp3?raw=true',
       line: 'real human being',
     },
@@ -1991,9 +1987,13 @@ document.addEventListener('DOMContentLoaded', function () {
       line: 'zero to hero',
     },
   ];
+  let audio;
   document.getElementById('randomLineButton').addEventListener('click', function () {
     const randomLine = lines[Math.floor(Math.random() * lines.length)];
-    let audio = new Audio(randomLine.url);
+    if (audio) {
+      audio.pause();
+    }
+    audio = new Audio(randomLine.url);
     audio.play();
     document.getElementById('randomLineContainer').textContent = randomLine.line;
   });
