@@ -1,0 +1,27 @@
+---
+name: Check Formatting
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+concurrency:
+  group: check-formatting-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-formatting:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Check formatting with Prettier
+        uses: actionsx/prettier@e90ec5455552f0f640781bdd5f5d2415acb52f1a
+        with:
+          args: --write .
+      - name: Show diff
+        run: git --no-pager diff --exit-code --color=never
+        shell: bash
