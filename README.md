@@ -4,9 +4,7 @@
 
 ## Description
 
-Nammers Inc. is has created a website for the Twitch streamer Forsen. The website
-provides visitors with information about Forsen, his social media accounts, and a way to contact
-NymN, who is responsible for the creation of the website. Additionally, the website features a quiz that tests visitors' knowledge about Forsen.
+Nammers Inc. has created a website for the Twitch streamer Forsen. The website provides visitors with information about Forsen, his social media accounts, and a way to contact NymN, who is responsible for the creation of the website. Additionally, the website features a quiz that tests visitors' knowledge about Forsen.
 
 ## Design
 
