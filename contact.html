@@ -26,8 +26,7 @@
           <div class="line-container">
 
             <script src="js/lines.js"></script>
-      
-            <button id="randomLineButton">Press to put Pepe in pain</button>
+            <button id="randomLineButton" class="line-button">Press to put Pepe in pain</button>
             <p id="randomLineContainer"></p>
             
           </div>
@@ -40,6 +39,26 @@
 
 
     <center>
+
+
+        <h1>Contact NymN</h1>
+        <form method="post" action="send_email.php" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+    
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject" required>
+    
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+    
+            <input type="submit" value="Send">
+        </form>
+
+<br><br>
 
 
     

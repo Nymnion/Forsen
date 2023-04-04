@@ -59,6 +59,7 @@ body {
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
+    font-weight: bold;
   }
   
   
@@ -251,6 +252,28 @@ body {
     background-color: #ddd;
   }
 
+.line-button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+
+
+  .line-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .line-button:focus {
+    outline: none;
+  }
 
 
   /* Footer Styles */
@@ -358,5 +381,58 @@ nav {
     background-color: #007acc;
     border-color: #007acc;
     color: #fff;
+  }
+  
+
+
+
+  /* Style the form container */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Style the form fields */
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Style the form submit button */
+  .contact-form input[type="submit"] {
+    background-color: #6e76a1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #8086bb;
+  }
+  
+  /* Style the form success message */
+  .contact-form .success {
+    color: rgb(104, 116, 168);
+    font-weight: bold;
+    margin-top: 15px;
   }
   
