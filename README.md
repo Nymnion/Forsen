@@ -14,8 +14,8 @@ Nammers Inc. has created a website for the Twitch streamer Forsen. The website p
 - [x] About page features a short explanation of who Forsen is and his achievements.
 - [x] Social media links are prominently displayed in the header and footer of the website
 - [x] Contact page should have a form that visitors can fill out to send an email to NymN. The form includes fields for name, email, subject, and message.
-- [x] The Forsen quiz has a separate page with multiple-choice questions about Forsen's life and career. The quiz has a scoring system that calculates the user's score and displays it
-      at the end of the quiz.
+- [x] The Forsen quiz has a separate page with multiple-choice questions about Forsen's life and career.
+  - [ ] The quiz has a scoring system that calculates the user's score and displays it at the end of the quiz.
 
 ## Functionality
 
