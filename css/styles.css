@@ -612,6 +612,16 @@ nav {
     margin-left: 1rem;
     /* add some space between the main content and the hover element */
 }
+
+.respec-eastereg {
+    margin-right: 20px;
+}
+
+.respec-eastereg img {
+    height: 32px;
+    width: auto;
+    vertical-align: middle;
+}
   
   /*global css file pepeLaugh*/
 
@@ -625,4 +635,4 @@ nav {
     75% { transform:translate(50%,-25%); }
   }
   
- 
+
