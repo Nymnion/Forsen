@@ -113,7 +113,7 @@ body {
   
   /* Hero slider */
   .hero-slider {
-    width: 63%;
+    width: 100%;
     height: 500px; /* You can adjust the height as needed */
     overflow: hidden;
     position: relative;
@@ -123,11 +123,11 @@ body {
   
   .hero-slider img {
     width: 100%;
-    height: auto;
+    height: 100%;
     position: absolute;
     opacity: 0;
     transition: opacity 1s;
-    object-fit: cover; /* This will make sure the images maintain their aspect ratio and cover the slider area */
+    object-fit: contain;
   }
   
   .hero-slider img.active {
@@ -292,18 +292,6 @@ body {
       display: block;
       padding: 0.5rem 0;
     }
-  }
-  
-  .hero-slider img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s;
-  }
-  
-  .hero-slider img.active {
-    opacity: 1;
   }
 
   .table-responsive {
