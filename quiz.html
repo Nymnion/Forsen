@@ -7,6 +7,8 @@
     <title>Quiz Time!!!</title>
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/main.js"></script>
+    <script defer src="js/quiz.js"></script>
+
 </head>
 
 <body>
@@ -27,73 +29,47 @@
 
     </header>
 
-
-
     <main>
-        <br><br><br>
+        <center>
 
-        <h1>Music Quiz!</h1>
-
-
-        <div class="container">
-
-
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/kihLBf9W7nc">
-            </iframe>
-
-
-            </center>
-
-
-
+            <div class="line-container">Press Next question to start quiz
+            </div>
+            <div class="quiz-container">
+                <div id="quiz"></div>
+            </div>
+            <button id="previous">Previous Question</button>
+            <button id="next">Next Question</button>
+            <button id="submit">Submit Quiz</button>
+            <div id="results"></div>
+        </center>
         </div>
-
-
-
-
-
     </main>
 
+    <footer>
+        <div class="socials">
+            <a href="index.html">HOME</a>
+            <br>
 
-
-    <center>
-
-        <div class="line-container">
-            <script src="js/lines.js"></script>
-            <button id="randomLineButton" class="line-button">
-           <img src="images/pepepains.png"></button>
-            <p id="randomLineContainer"></p>
+            <h3>Follow Forsen on:</h3>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/Forsen" target="_blank">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitch.tv/forsen" target="_blank">
+                        <i class="fab fa-twitch"></i> Twitch
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.onlyfors.com" target="_blank">
+                        <i class="fab fa-onlyfans"></i> OnlyFans
+                    </a>
+                </li>
+            </ul>
         </div>
-
-
-
-        <footer>
-            <div class="socials">
-                <a href="index.html">HOME</a>
-                <br>
-
-                <h3>Follow Forsen on:</h3>
-                <ul>
-                    <li>
-                        <a href="https://twitter.com/Forsen" target="_blank">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitch.tv/forsen" target="_blank">
-                            <i class="fab fa-twitch"></i> Twitch
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.onlyfors.com" target="_blank">
-                            <i class="fab fa-onlyfans"></i> OnlyFans
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </center>
-
+    </footer>
 </body>
 
 </html>

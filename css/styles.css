@@ -4,7 +4,6 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    margin-top: 5.0rem;
   }
   
   h1 { color: #ffffff; font-family: 'Raleway',sans-serif;
@@ -45,20 +44,6 @@ body {
     color: #fff;
   }
 
-  
-  .video-container {
-    background-color: #6a7997;
-    border-radius: 10px;
-    border: 2px solid #333;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #fff;
-  }
 
 
     
@@ -80,8 +65,6 @@ body {
   
   
   /* Header */
-
-  
   header {
     background-color: rgba(72, 82, 104, 0.5); 
     backdrop-filter: blur(5.9px);
@@ -104,8 +87,6 @@ body {
   header a:hover {
     color: #3498db; /* Change this color to match Forsen's branding */
   }
-  
-  
   
   /* Hero slider */
   .hero-slider {
@@ -304,16 +285,11 @@ body {
     opacity: 1;
   }
 
-  .table-responsive {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
 
   .table-forsen {
-    border-collapse: collapse;
     width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
   }
   
   .table-forsen th,
@@ -363,7 +339,7 @@ body {
 
   /* Footer Styles */
   footer {
-        width: 60%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,7 +397,7 @@ body {
   }
   
   /* Navigation Styles */
-  nav {
+nav {
     display: flex;
     justify-content: center;
   }
@@ -438,25 +414,35 @@ body {
   }
   
   .nav-buttons a {
-    color: #13294b;
+    color: #007acc;
     text-decoration: none;
     font-size: 1.1rem;
-    font-weight: 600;
-    padding: 10px 20px;
-    display: inline-block;
-    background-color: #d8e9f7;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
   }
   
   .nav-buttons a:hover {
-    background-color: #73b4dc;
-    color: #e7f6fa;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26), 0 5px 10px rgba(0, 0, 0, 0.33);
+    color: #1da1f2;
   }
   
+  /* Adjust the following values as necessary to match your desired button appearance */
+  .nav-buttons li:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  .nav-buttons a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #9ea6c9;
+    border: 2px solid #007acc;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .nav-buttons a:hover {
+    background-color: #007acc;
+    border-color: #007acc;
+    color: #fff;
+  }
   
 
 
@@ -511,3 +497,22 @@ body {
     margin-top: 15px;
   }
   
+
+  .slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
