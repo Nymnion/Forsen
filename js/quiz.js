@@ -273,7 +273,15 @@ function showSlide(n) {
 }
 
 function showNextSlide() {
-    showSlide(currentSlide + 1);
+    // Check that something is selected before moving on
+    // If not, alert the user
+    if ((document.querySelector('input[name="question' + currentSlide + '"]:checked') === null) && (currentSlide != 0)) {
+        alert("Please select an answer before continuing.");
+    }
+    else {
+        showSlide(currentSlide + 1);
+    }
+
 }
 
 function showPreviousSlide() {
