@@ -1,517 +1,550 @@
 /* General styles */
 body {
-    background-color: #394152;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    margin-top: 5.0rem;
-    cursor: url('../images/cursor_regular.png'), auto;
-  }
-  a:hover, .hero-slider-control:hover, .contact-form button:hover, .line-button:hover, .contact-form input:hover{
-    cursor: url('../images/cursor_hover.png'), pointer;
-  }
-  
-  h1 { color: #ffffff; font-family: 'Raleway',sans-serif;
-     font-size: 62px; font-weight: 800; 
-     line-height: 72px; margin: 0 0 24px;
-      text-align: center; text-transform: uppercase; }
-
-
-  
-      h2 { color: #ffffff; font-family: 'Raleway',sans-serif;
-        font-size: 27px; font-weight: 800; 
-        line-height: 72px; margin: 0 0 24px;
-         text-align: center; text-transform: uppercase; }
-
-
-
-
-  h3, h4, h5, h6 {
-    font-weight: bold;
-  }
-  
-  a {
-    color: #3498db;
-    text-decoration: none;
-  }
-  
-  .container {
-    background-color: #6a7997;
-    border-radius: 10px;
-    border: 2px solid #333;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #fff;
-  }
-
-  
-  .video-container {
-    background-color: #6a7997;
-    border-radius: 10px;
-    border: 2px solid #333;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #fff;
-  }
-
-
-    
-  .line-container {
-    background-color: #6a7997;
-    border-radius: 10px;
-    border: 2px solid #333;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 300px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  
-  
-  /* Header */
-
-  
-  header {
-    background-color: rgba(72, 82, 104, 0.5); 
-    backdrop-filter: blur(5.9px);
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem 0;
-    position: fixed;
-    border-radius: 0 0 50px 50px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* This will ensure the header is displayed on top of other elements */
-  }
-  
-  header a {
-    color: #fff;
-    padding: 0 1rem;
-  }
-  
-  header a:hover {
-    color: #3498db; /* Change this color to match Forsen's branding */
-  }
-  
-  
-  
-  /* Hero slider */
-  .hero-slider {
-    width: 63%;
-    height: 500px; /* You can adjust the height as needed */
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  
-  .hero-slider img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s;
-    object-fit: cover; /* This will make sure the images maintain their aspect ratio and cover the slider area */
-  }
-  
-  .hero-slider img.active {
-    opacity: 1;
-  }
-
-
-
-  .hero-slider-control {
-    position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    z-index: 10;
-    transform: translateY(-50%);
-  }
-  
-  .hero-slider-control:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .hero-slider-control.hero-slider-prev {
-    left: 1rem;
-  }
-  
-  .hero-slider-control.hero-slider-next {
-    right: 1rem;
-  }
-  
-  /* About page */
-  .about {
-    padding: 2rem 0;
-  }
-  
-  /* Social media links */
-  .social-links {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-  }
-  
-  .social-links a {
-    font-size: 2rem;
-    color: #333;
-    margin: 0 1rem;
-  }
-  
-  .social-links a:hover {
-    color: #3498db; /* Change this color to match Forsen's branding */
-  }
-  
-  /* Contact page */
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 2rem auto;
-  }
-  
-  .contact-form label {
-    margin-bottom: 0.5rem;
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-    width: 100%;
-  }
-  
-  .contact-form button[type="submit"] {
-    background-color: #69a8d2; /* Change this color to match Forsen's branding */
-    color: #fff;
-    padding: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .contact-form button[type="submit"]:hover {
-    background-color: #789eb8; /* Change this color to match Forsen's branding */
-  }
-  
-  /* Quiz page */
-  .quiz {
-    width: 30rem;
-    height: 15rem;
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 30px;
-  }
-
-  .question-container{
-    width: 80%;
-    height: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid darkgray;
-    border-radius: 25px;
+  background-color: #394152;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 5.0rem;
+  cursor: url('../images/cursor_regular.png'), auto;
 }
-  
 
-.options-container{
-    width: 80%;
-    height: 12rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+a:hover,
+.hero-slider-control:hover,
+.contact-form button:hover,
+.line-button:hover,
+.contact-form input:hover {
+  cursor: url('../images/cursor_hover.png'), pointer;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
-.quiz-details-container{
-    width: 80%;
-    height: 4rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+h2 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.quiz-options-container{
-    width: 80%;
-    height: 12rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+
+
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
 }
 
-.score, .timer {
-    font-size: 24px;
-    margin: 10px;
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.container {
+  background-color: #6a7997;
+  border-radius: 10px;
+  border: 2px solid #333;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+
+.video-container {
+  background-color: #6a7997;
+  border-radius: 10px;
+  border: 2px solid #333;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+
+
+.line-container {
+  background-color: #6a7997;
+  border-radius: 10px;
+  border: 2px solid #333;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+
+/* Header */
+
+
+header {
+  background-color: rgba(72, 82, 104, 0.5);
+  backdrop-filter: blur(5.9px);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  position: fixed;
+  border-radius: 0 0 50px 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* This will ensure the header is displayed on top of other elements */
+}
+
+header a {
+  color: #fff;
+  padding: 0 1rem;
+}
+
+header a:hover {
+  color: #3498db;
+  /* Change this color to match Forsen's branding */
+}
+
+
+
+/* Hero slider */
+.hero-slider {
+  width: 85%;
+  height: 500px;
+  /* You can adjust the height as needed */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+  object-fit: cover;
+  /* This will make sure the images maintain their aspect ratio and cover the slider area */
+}
+
+.hero-slider img.active {
+  opacity: 1;
+}
+
+
+.hero-slider-control {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(36, 42, 45, 0.5);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  border: none;
+  z-index: 10;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+}
+
+.hero-slider-control:hover {
+  background-color: rgba(147, 176, 208, 0.8);
+}
+
+.hero-slider-control.hero-slider-prev {
+  left: 1rem;
+}
+
+.hero-slider-control.hero-slider-next {
+  right: 1rem;
+}
+
+
+/* About page */
+.about {
+  padding: 2rem 0;
+}
+
+/* Social media links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.social-links a {
+  font-size: 2rem;
+  color: #333;
+  margin: 0 1rem;
+}
+
+.social-links a:hover {
+  color: #3498db;
+  /* Change this color to match Forsen's branding */
+}
+
+/* Contact page */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #69a8d2;
+  /* Change this color to match Forsen's branding */
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #789eb8;
+  /* Change this color to match Forsen's branding */
+}
+
+/* Quiz page */
+.quiz {
+  padding-top: 100px;
+  width: 30rem;
+  height: 15rem;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 30px;
+}
+
+.question-container {
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid darkgray;
+  border-radius: 25px;
+}
+
+
+.options-container {
+  width: 80%;
+  height: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.quiz-details-container {
+  width: 80%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quiz-options-container {
+  width: 80%;
+  height: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.score,
+.timer {
+  font-size: 24px;
+  margin: 10px;
 }
 
 .question {
-    font-size: 30px;
-    margin: 20px;
+  font-size: 30px;
+  margin: 20px;
 }
+
 .answers {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
 }
-  
 
 
-  .answer {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
-    header a {
-      display: block;
-      padding: 0.5rem 0;
-    }
-  }
-  
-  .hero-slider img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s;
-  }
-  
-  .hero-slider img.active {
-    opacity: 1;
-  }
 
-  .table-responsive {
+.answer {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  header a {
     display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    padding: 0.5rem 0;
   }
+}
+
+.hero-slider img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.hero-slider img.active {
+  opacity: 1;
+}
+
+.table-responsive {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
 
-  .table-forsen {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  .table-forsen th,
-  .table-forsen td {
-    border: 1px solid #cccccc;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .table-forsen th {
-    background-color: #404040; /* Adjust this color to match your website */
-    color: #ffffff;
-    font-weight: bold;
-  }
-  
-  .table-forsen tr:nth-child(even) {
-    background-color: #575863;
-  }
-  
-  .table-forsen tr:hover {
-    background-color: #ddd;
-  }
+.table-forsen {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-forsen th,
+.table-forsen td {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-forsen th {
+  background-color: #404040;
+  /* Adjust this color to match your website */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table-forsen tr:nth-child(even) {
+  background-color: #575863;
+}
+
+.table-forsen tr:hover {
+  background-color: #ddd;
+}
 
 .line-button {
-    background-color: #496078;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    padding: 12px 24px;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  }
+  background-color: #496078;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
 
 
-  .line-button:hover {
-    background-color: #77a2d0;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .line-button:focus {
-    outline: none;
-  }
+.line-button:hover {
+  background-color: #77a2d0;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.line-button:focus {
+  outline: none;
+}
 
 
-  /* Footer Styles */
-  footer {
-        width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #576a83;
-    padding: 20px;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .socials {
-    text-align: center;
-    margin-right: 20px;
-  }
-  
-  .socials h3 {
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .socials ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .socials li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .socials a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .socials a:hover {
-    color: #1da1f2;
-  }
-  
-  .home-link {
-    text-align: center;
-  }
-  
-  .home-link a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .home-link a:hover {
-    color: #1da1f2;
-  }
-  
-  /* Navigation Styles */
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav-buttons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .nav-buttons li {
-    margin: 0 10px;
-  }
-  
-  .nav-buttons a {
-    color: #13294b;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 10px 20px;
-    display: inline-block;
-    background-color: #d8e9f7;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-  }
-  
-  .nav-buttons a:hover {
-    background-color: #73b4dc;
-    color: #e7f6fa;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26), 0 5px 10px rgba(0, 0, 0, 0.33);
-  }
-  
-  
+/* Footer Styles */
+footer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #576a83;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.socials {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.socials h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.socials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socials li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.socials a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #1da1f2;
+}
+
+.home-link {
+  text-align: center;
+}
+
+.home-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.home-link a:hover {
+  color: #1da1f2;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-buttons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-buttons li {
+  margin: 0 10px;
+}
+
+.nav-buttons a {
+  color: #13294b;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #d8e9f7;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.nav-buttons a:hover {
+  background-color: #73b4dc;
+  color: #e7f6fa;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26), 0 5px 10px rgba(0, 0, 0, 0.33);
+}
 
 
 
-  /* Style the form container */
+
+
+/* Style the form container */
 .contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #f5f5f5;
-  }
-  
-  /* Style the form fields */
-  .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  /* Style the form submit button */
-  .contact-form input[type="submit"] {
-    background-color: #6e76a1;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-form input[type="submit"]:hover {
-    background-color: #8086bb;
-  }
-  
-  /* Style the form success message */
-  .contact-form .success {
-    color: rgb(104, 116, 168);
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  
-   .slide{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+/* Style the form fields */
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Style the form submit button */
+.contact-form input[type="submit"] {
+  background-color: #6e76a1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #8086bb;
+}
+
+/* Style the form success message */
+.contact-form .success {
+  color: rgb(104, 116, 168);
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.slide {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -520,13 +553,14 @@ body {
   opacity: 0;
   transition: opacity 0.5s;
 }
-.active-slide{
+
+.active-slide {
   opacity: 1;
   z-index: 2;
 }
-.quiz-container{
+
+.quiz-container {
   position: relative;
   height: 200px;
   margin-top: 40px;
 }
-  
