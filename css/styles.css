@@ -594,3 +594,48 @@ nav {
     transform: translate(50%, -25%);
   }
 }
+
+/* advice friend in bottom left */
+#adviceFriend {
+  position: fixed;
+  bottom: 0;
+  left: -200%;
+  opacity: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  transition: left 0.5s ease-out, opacity 0.5s ease-out;
+}
+.advicePopup {
+  background: #ddd;
+  color: rgb(36, 42, 45);
+  border-color: rgb(36, 42, 45);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 0.85rem;
+  max-width: 50%;
+  min-height: 24px;
+  margin-left: 10px;
+  position: relative;
+}
+.advicePopup::before {
+  content: '';
+  position: absolute;
+  bottom: 12px;
+  left: -24px;
+  z-index: 2;
+  border: 12px solid transparent;
+  border-right: 12px solid rgb(36, 42, 45);
+}
+#adviceFriend.active {
+  left: 0;
+  opacity: 1;
+}
+@media all and (max-width: 400px) {
+  #adviceFriend img {
+    width: 50px;
+    height: 50px;
+  }
+}
