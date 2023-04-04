@@ -187,19 +187,73 @@ body {
   }
   
   /* Quiz page */
-  .quiz-container {
-    padding: 2rem 0;
-  }
-  
-  .question {
-    margin-bottom: 1rem;
-  }
-  
-  .answers {
+  .quiz {
+    width: 30rem;
+    height: 15rem;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
   }
+
+  .question-container{
+    width: 80%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid darkgray;
+    border-radius: 25px;
+}
   
+
+.options-container{
+    width: 80%;
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.quiz-details-container{
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quiz-options-container{
+    width: 80%;
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.score, .timer {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.question {
+    font-size: 30px;
+    margin: 20px;
+}
+.answers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+
+
   .answer {
     margin-bottom: 0.5rem;
   }
