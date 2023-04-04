@@ -4,6 +4,11 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    margin-top: 5.0rem;
+    cursor: url('/images/cursor_regular.png'), auto;
+  }
+  a:hover {
+    cursor: url('/images/cursor_hover.png'), pointer;
   }
   
   h1 { color: #ffffff; font-family: 'Raleway',sans-serif;
