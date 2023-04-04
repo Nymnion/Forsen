@@ -16,8 +16,8 @@ function displayClips(clips) {
     if (thumbnailUrl === 'nsfw') {
         thumbnailUrl = '../images/placeholder.png';
     }
-    var $thumbnail = $('<img>').attr('src', thumbnailUrl).attr('alt', clip.data.title);
-    $clipDiv.append($thumbnail).append($titleLink);
+    var $thumbnailLink = $('<a>').attr('href', clip.data.url).attr('target', '_blank').append($('<img>').attr('src', thumbnailUrl).attr('alt', clip.data.title));
+    $clipDiv.append($thumbnailLink).append($titleLink);
     $clipsDiv.append($clipDiv);
   });
 }
