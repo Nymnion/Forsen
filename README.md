@@ -19,7 +19,7 @@ Nammers Inc. has created a website for the Twitch streamer Forsen. The website p
 
 ## Functionality
 
-- [ ] The website is mobile-friendly and responsive.
+- [x] The website is mobile-friendly and responsive.
 - [ ] The landing page slider should be optimized for fast loading times.
 - [x] The social media links open in a new tab when clicked.
 - [ ] The contact form validates the user's input and provide feedback if there are any errors.
