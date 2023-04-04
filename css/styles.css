@@ -612,3 +612,17 @@ nav {
     margin-left: 1rem;
     /* add some space between the main content and the hover element */
 }
+  
+  /*global css file pepeLaugh*/
+
+  .animateEasterEgg {
+    animation: x 0.6s infinite alternate;
+  }
+  
+  @keyframes x {
+    25% { transform:translate(-50%,-25%); }
+    50% { transform:translate(0%,0%); }
+    75% { transform:translate(50%,-25%); }
+  }
+  
+ 
