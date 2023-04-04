@@ -20,3 +20,6 @@ may dismiss contributors at his discretion for the good of the kingdom.
 Try to generally treat them well, we don't want a riot on our hands.
 Problematic and useless serfs may be disposed of freely.
 Inefficiency will be seen as weakness.
+
+##DO NO REMOVE THIS IS A LEGAL REQUIREMENT FOR UK
+This wbesite is Okayge with B2B Content License.
