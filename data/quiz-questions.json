@@ -1,302 +1,322 @@
 [
-	{
-		"id": 77702,
-		"question": "What is forsen's current personal best in minecraft?",
-		"answers": ["18:10", "20:45", "20:38", "21:37"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77703,
-		"question": "Can someone explain nymn to me? He spends _____ percent of the stream talking about forsen and his viewers.",
-		"answers": ["80-90", "90-95", "100", "60-70"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77705,
-		"question": "Who is locked up in forsen's basement?",
-		"answers": ["tyggbar", "eloise", "nani", "your mom"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77706,
-		"question": "What was Forsen's death count in <i>Garlic</i>?",
-		"answers": ["2691", "513", "1412", "0, he is a god gamer"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77707,
-		"question": "What is the name of forsen's alt account?",
-		"answers": ["forsenlol", "Gawr Gura", "NymN", "Dr Disrespect"],
-		"correctIndex": 1
-	},
-	{
-		"id": 77708,
-		"question": "How many shadowsteps did forsen have in his miracle rogue run?",
-		"answers": ["4", "3", "0", "1"],
-		"correctIndex": 1
-	},
-	{
-		"id": 77709,
-		"question": "What was forsen's first GTA RP character called?",
-		"answers": ["Snus Svenberg", "Frank Fritugo", "Sven Snusberg", "Mason Foorhees"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77713,
-		"question": "How long did forsen get banned for when he showed a horse cock on stream in 2020?",
-		"answers": ["1 month", "It never happened", "3 days", "2 weeks"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77714,
-		"question": "What is forsen's full name?",
-		"answers": ["Sebastian Muhammed Fors", "Sebastian Andersson Fors", "Sebastian Hans Eli Fors", "Sebastian Heichou"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77718,
-		"question": "When did forsen first talk to nani?",
-		"answers": ["2015", "2018", "2023", "2016"],
-		"correctIndex": 0
-	},
-	{
-		"id": 87701,
-		"question": "Forsen's dog was originally going to be called:",
-		"answers": ["Pleb", "Rat", "BIBI", "Pepper"],
-		"correctIndex": 0
-	},
-	{
-		"id": 87707,
-		"question": "What team is forsen part of?",
-		"answers": ["Cloud9", "TSM", "MADMONQ", "Tempo Storm"],
-		"correctIndex": 0
-	},
-	{
-		"id": 87708,
-		"question": "In what Swedish city does forsen live?",
-		"answers": ["Mecca", "Malmo", "Gothenburg", "Stockholm"],
-		"correctIndex": 3
-	},
-	{
-		"id": 87709,
-		"question": "How many hours of Minecraft did forsen play?",
-		"answers": ["500", "699", "701", "521"],
-		"correctIndex": 1
-	},
-	{
-		"id": 87710,
-		"question": "How Long did it take forsen to beat <i>Jump King: Ghost of the Babe</i>?",
-		"answers": ["57:45:08", "50:27:46", "51:55:39", "56:02:00"],
-		"correctIndex": 3
-	},
-	{
-		"id": 87725,
-		"question": "Which of these characters has forsen never played in SoulCalibur VI?",
-		"answers": ["Talim", "Geralt", "Astaroth", "Raphael"],
-		"correctIndex": 0
-	},
-	{
-		"id": 87726,
-		"question": "What was the last mission forsen played in <i>GTA Vice City (original edition)</i> before his save got corrupted?",
-		"answers": ["The Job", "Shakedown", "Bomb Away!", "Hog Tied"],
-		"correctIndex": 0
-	},
-	{
-		"id": 87733,
-		"question": "How many hands did Forsen Sebastian Fors lose in a row?",
-		"answers": ["11", "7", "13", "0"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77082,
-		"question": "Decode the following word:<br>IZBJANW",
-		"answers": ["KACHING", "JACKBOX", "SWEDISH", "FORSENE"],
-		"correctIndex": 1
-	},
-	{
-		"id": 77083,
-		"question": "Which of the following cannot be decoded to <i>FORSEN</i> in any way?",
-		"answers": ["AJMNZI", "GPSTFO", "WIHOPR", "ENQRDM"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77109,
-		"question": "What is forsen's peak viewer count?",
-		"answers": ["60,545", "80,860", "94,678", "104,570"],
-		"correctIndex": 1
-	},
-	{
-		"id": 77110,
-		"question": "What is Forsen's all-time high active subs count?",
-		"answers": ["24,423", "19,554", "16,653", "34,541"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77111,
-		"question": "What is Forsen's most frequent stream category?",
-		"answers": ["Just Chatting", "Minecraft", "Hearthstone", "PUBG"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77113,
-		"question": "When was the last time Forsen played <i>GTA Vice City (original version)</i> on stream?",
-		"answers": ["Apr 2, 2020", "Mar 7, 2020", "Apr 21, 2019", "Nov 9, 2020"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77114,
-		"question": "What is Forsen's average daily broadcast time?",
-		"answers": ["6.3 hrs", "6.5 hrs", "6.1 hrs", "6.7 hrs"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77115,
-		"question": "Choose a day of week with a least amount of Forsen's streams on average:",
-		"answers": ["Saturday", "Sunday", "Friday", "Monday"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77116,
-		"question": "How many days did Forsen stream on in 2020?",
-		"answers": ["310", "301", "285", "269"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77117,
-		"question": "What game was Forsen playing when his viewer count peaked?",
-		"answers": ["Atlas", "Minecraft", "Welcome to the Game II", "Jump King"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77118,
-		"question": "Which game on Forsen's stream attracted the most viewers on average?",
-		"answers": ["Atlas", "Who Wants To Be A Millionaire", "Welcome to the Game II", "Paradigm"],
-		"correctIndex": 1
-	},
-	{
-		"id": 77119,
-		"question": "Which game Forsen hasn't streamed in a longest time? (according to TwitchTracker)",
-		"answers": ["Town of Salem", "GeoGuessr", "The Culling", "Poker"],
-		"correctIndex": 3
-	},
-	{
-		"id": 77120,
-		"question": "Which game has the worst followers lost per hour ratio for Forsen?",
-		"answers": ["Cards Against Humanity", "Loop Hero", "Outer Wilds", "Tabletop Simulator"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77121,
-		"question": "Which game has the best follow per hour ratio for Forsen?",
-		"answers": ["Project Winter", "Mario Kart 8 Deluxe", "Lethal League", "Hand Simulator"],
-		"correctIndex": 3
-	},
-	{
-		"id": 77122,
-		"question": "Forsen's least streamed game was played for how long?",
-		"answers": ["63 minutes", "40 minutes", "14 minutes", "5 minutes"],
-		"correctIndex": 3
-	},
-	{
-		"id": 77123,
-		"question": "Which one of these games is Forsen's least streamed one?",
-		"answers": ["Spelunky", "House of Detention", "Stream Racer", "Tabletop Simulator"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77125,
-		"question": "In Forsen fan game, <i>Never Ending Cycle</i>, who gives you a key to Cell 4 (the maze)?",
-		"answers": ["forsenPls", "MegaLUL", "The nurse", "AlienPls"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77126,
-		"question": "Which one of these is <i>NOT</i> an enforceable rule in forsen's chat?",
-		"answers": ["No game complainers", "Don't say it", "No unrelated spam", "No streamsniping"],
-		"correctIndex": 3
-	},
-	{
-		"id": 77127,
-		"question": "Which post in <i>r/forsen</i> is the most upvoted one?<br>(as of Oct'21)",
-		"answers": ["(picture of bread boat)", "forsenE", "A Doubters Redemption", "mental asylum was pog today"],
-		"correctIndex": 1
-	},
-	{
-		"id": 77128,
-		"question": "Which of these subreddits has the most members? (as of Dec'21)",
-		"answers": ["r/forsen", "r/xqcow", "r/RedditAndChill", "r/LiveStreamFails"],
-		"correctIndex": 1
-	},
-	{
-		"id": 77129,
-		"question": "What is <i>BAJS.TV</i>?",
-		"answers": ["A neural network copypasta generator", "An alternative streaming service", "A collection of baj streamers", "A Forsen memorial"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77139,
-		"question": "Forsen's first Hearthstone team was called:",
-		"answers": ["ManaGrind", "Team Curse", "Lucky Draw", "Cloud9"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77140,
-		"question": "When is forsen's birthday?",
-		"answers": ["November 9", "December 1", "November 12", "December 16"],
-		"correctIndex": 3
-	},
-	{
-		"id": 77142,
-		"question": "How many distinct letters would you need to spell forsen's full name?",
-		"answers": ["12", "10", "11", "13"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77146,
-		"question": "Forsen's longest stream was going for approximately how long?<br><i>(since 2016)</i>",
-		"answers": ["21.5 hrs", "14.4 hrs", "8.9 hrs", "12.9 hrs"],
-		"correctIndex": 0
-	},
-	{
-		"id": 89707,
-		"question": "What was forsen's rank in the leaked twitch earnings leaderboard?",
-		"answers": ["118", "1", "188", "81"],
-		"correctIndex": 0
-	},
-	{
-		"id": 89710,
-		"question": "What is something only the real forsen would say?",
-		"answers": ["The Sopranos is my favorite TV show", "I love Valorant", "Nina and Peppah are well and alive", "Buy an iPhone"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77157,
-		"question": "How many hours did Forsen stream for in 2021?",
-		"answers": ["1234", "1808", "1998", "2021"],
-		"correctIndex": 2
-	},
-	{
-		"id": 77158,
-		"question": "Which game attracted the most viewers to forsen's stream in 2021?<br>(on average)",
-		"answers": ["Jackbox Party Pack 7", "Minecraft", "Twelve Minutes", "GTA V"],
-		"correctIndex": 0
-	},
-	{
-		"id": 77159,
-		"question": "Top Forsen's clip of 2021 (by view count) is:",
-		"answers": ["FORSEN PUTS THE JUICE IN THE FRIDGE AND LOCKS THE DOOR <i>(Minecraft)</i>", "FeelsStrongMan finally <i>(Minecraft/funny TTS)</i>", "Every Game <i>(Jump King)</i>", "pepeLaugh <i>(Just Chatting/reactsen)</i>"],
-		"correctIndex": 1
-	},
-	{
-		"id": 77160,
-		"question": "The longest forsen's stream in 2021 went on for how long?",
-		"answers": ["6.5 hrs", "6.9 hrs", "7.4 hrs", "8.3 hrs"],
-		"correctIndex": 3
-	},
-	{
-		"id": 77161,
-		"question": "The first game forsen played on stream in 2022 is:",
-		"answers": ["Bro Falls: Ultimate Showdown", "Teamfight Tactics", "Barbie and the Magic of Pegasus", "Clownfield 2042"],
-		"correctIndex": 3
-	}
+  {
+    "id": 77702,
+    "question": "What is forsen's current personal best in minecraft?",
+    "answers": ["18:10", "20:45", "20:38", "21:37"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77703,
+    "question": "Can someone explain nymn to me? He spends _____ percent of the stream talking about forsen and his viewers.",
+    "answers": ["80-90", "90-95", "100", "60-70"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77705,
+    "question": "Who is locked up in forsen's basement?",
+    "answers": ["tyggbar", "eloise", "nani", "your mom"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77706,
+    "question": "What was Forsen's death count in <i>Garlic</i>?",
+    "answers": ["2691", "513", "1412", "0, he is a god gamer"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77707,
+    "question": "What is the name of forsen's alt account?",
+    "answers": ["forsenlol", "Gawr Gura", "NymN", "Dr Disrespect"],
+    "correctIndex": 1
+  },
+  {
+    "id": 77708,
+    "question": "How many shadowsteps did forsen have in his miracle rogue run?",
+    "answers": ["4", "3", "0", "1"],
+    "correctIndex": 1
+  },
+  {
+    "id": 77709,
+    "question": "What was forsen's first GTA RP character called?",
+    "answers": ["Snus Svenberg", "Frank Fritugo", "Sven Snusberg", "Mason Foorhees"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77713,
+    "question": "How long did forsen get banned for when he showed a horse cock on stream in 2020?",
+    "answers": ["1 month", "It never happened", "3 days", "2 weeks"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77714,
+    "question": "What is forsen's full name?",
+    "answers": ["Sebastian Muhammed Fors", "Sebastian Andersson Fors", "Sebastian Hans Eli Fors", "Sebastian Heichou"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77718,
+    "question": "When did forsen first talk to nani?",
+    "answers": ["2015", "2018", "2023", "2016"],
+    "correctIndex": 0
+  },
+  {
+    "id": 87701,
+    "question": "Forsen's dog was originally going to be called:",
+    "answers": ["Pleb", "Rat", "BIBI", "Pepper"],
+    "correctIndex": 0
+  },
+  {
+    "id": 87707,
+    "question": "What team is forsen part of?",
+    "answers": ["Cloud9", "TSM", "MADMONQ", "Tempo Storm"],
+    "correctIndex": 0
+  },
+  {
+    "id": 87708,
+    "question": "In what Swedish city does forsen live?",
+    "answers": ["Mecca", "Malmo", "Gothenburg", "Stockholm"],
+    "correctIndex": 3
+  },
+  {
+    "id": 87709,
+    "question": "How many hours of Minecraft did forsen play?",
+    "answers": ["500", "699", "701", "521"],
+    "correctIndex": 1
+  },
+  {
+    "id": 87710,
+    "question": "How Long did it take forsen to beat <i>Jump King: Ghost of the Babe</i>?",
+    "answers": ["57:45:08", "50:27:46", "51:55:39", "56:02:00"],
+    "correctIndex": 3
+  },
+  {
+    "id": 87725,
+    "question": "Which of these characters has forsen never played in SoulCalibur VI?",
+    "answers": ["Talim", "Geralt", "Astaroth", "Raphael"],
+    "correctIndex": 0
+  },
+  {
+    "id": 87726,
+    "question": "What was the last mission forsen played in <i>GTA Vice City (original edition)</i> before his save got corrupted?",
+    "answers": ["The Job", "Shakedown", "Bomb Away!", "Hog Tied"],
+    "correctIndex": 0
+  },
+  {
+    "id": 87733,
+    "question": "How many hands did Forsen Sebastian Fors lose in a row?",
+    "answers": ["11", "7", "13", "0"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77082,
+    "question": "Decode the following word:<br>IZBJANW",
+    "answers": ["KACHING", "JACKBOX", "SWEDISH", "FORSENE"],
+    "correctIndex": 1
+  },
+  {
+    "id": 77083,
+    "question": "Which of the following cannot be decoded to <i>FORSEN</i> in any way?",
+    "answers": ["AJMNZI", "GPSTFO", "WIHOPR", "ENQRDM"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77109,
+    "question": "What is forsen's peak viewer count?",
+    "answers": ["60,545", "80,860", "94,678", "104,570"],
+    "correctIndex": 1
+  },
+  {
+    "id": 77110,
+    "question": "What is Forsen's all-time high active subs count?",
+    "answers": ["24,423", "19,554", "16,653", "34,541"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77111,
+    "question": "What is Forsen's most frequent stream category?",
+    "answers": ["Just Chatting", "Minecraft", "Hearthstone", "PUBG"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77113,
+    "question": "When was the last time Forsen played <i>GTA Vice City (original version)</i> on stream?",
+    "answers": ["Apr 2, 2020", "Mar 7, 2020", "Apr 21, 2019", "Nov 9, 2020"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77114,
+    "question": "What is Forsen's average daily broadcast time?",
+    "answers": ["6.3 hrs", "6.5 hrs", "6.1 hrs", "6.7 hrs"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77115,
+    "question": "Choose a day of week with a least amount of Forsen's streams on average:",
+    "answers": ["Saturday", "Sunday", "Friday", "Monday"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77116,
+    "question": "How many days did Forsen stream on in 2020?",
+    "answers": ["310", "301", "285", "269"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77117,
+    "question": "What game was Forsen playing when his viewer count peaked?",
+    "answers": ["Atlas", "Minecraft", "Welcome to the Game II", "Jump King"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77118,
+    "question": "Which game on Forsen's stream attracted the most viewers on average?",
+    "answers": ["Atlas", "Who Wants To Be A Millionaire", "Welcome to the Game II", "Paradigm"],
+    "correctIndex": 1
+  },
+  {
+    "id": 77119,
+    "question": "Which game Forsen hasn't streamed in a longest time? (according to TwitchTracker)",
+    "answers": ["Town of Salem", "GeoGuessr", "The Culling", "Poker"],
+    "correctIndex": 3
+  },
+  {
+    "id": 77120,
+    "question": "Which game has the worst followers lost per hour ratio for Forsen?",
+    "answers": ["Cards Against Humanity", "Loop Hero", "Outer Wilds", "Tabletop Simulator"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77121,
+    "question": "Which game has the best follow per hour ratio for Forsen?",
+    "answers": ["Project Winter", "Mario Kart 8 Deluxe", "Lethal League", "Hand Simulator"],
+    "correctIndex": 3
+  },
+  {
+    "id": 77122,
+    "question": "Forsen's least streamed game was played for how long?",
+    "answers": ["63 minutes", "40 minutes", "14 minutes", "5 minutes"],
+    "correctIndex": 3
+  },
+  {
+    "id": 77123,
+    "question": "Which one of these games is Forsen's least streamed one?",
+    "answers": ["Spelunky", "House of Detention", "Stream Racer", "Tabletop Simulator"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77125,
+    "question": "In Forsen fan game, <i>Never Ending Cycle</i>, who gives you a key to Cell 4 (the maze)?",
+    "answers": ["forsenPls", "MegaLUL", "The nurse", "AlienPls"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77126,
+    "question": "Which one of these is <i>NOT</i> an enforceable rule in forsen's chat?",
+    "answers": ["No game complainers", "Don't say it", "No unrelated spam", "No streamsniping"],
+    "correctIndex": 3
+  },
+  {
+    "id": 77127,
+    "question": "Which post in <i>r/forsen</i> is the most upvoted one?<br>(as of Oct'21)",
+    "answers": ["(picture of bread boat)", "forsenE", "A Doubters Redemption", "mental asylum was pog today"],
+    "correctIndex": 1
+  },
+  {
+    "id": 77128,
+    "question": "Which of these subreddits has the most members? (as of Dec'21)",
+    "answers": ["r/forsen", "r/xqcow", "r/RedditAndChill", "r/LiveStreamFails"],
+    "correctIndex": 1
+  },
+  {
+    "id": 77129,
+    "question": "What is <i>BAJS.TV</i>?",
+    "answers": [
+      "A neural network copypasta generator",
+      "An alternative streaming service",
+      "A collection of baj streamers",
+      "A Forsen memorial"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": 77139,
+    "question": "Forsen's first Hearthstone team was called:",
+    "answers": ["ManaGrind", "Team Curse", "Lucky Draw", "Cloud9"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77140,
+    "question": "When is forsen's birthday?",
+    "answers": ["November 9", "December 1", "November 12", "December 16"],
+    "correctIndex": 3
+  },
+  {
+    "id": 77142,
+    "question": "How many distinct letters would you need to spell forsen's full name?",
+    "answers": ["12", "10", "11", "13"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77146,
+    "question": "Forsen's longest stream was going for approximately how long?<br><i>(since 2016)</i>",
+    "answers": ["21.5 hrs", "14.4 hrs", "8.9 hrs", "12.9 hrs"],
+    "correctIndex": 0
+  },
+  {
+    "id": 89707,
+    "question": "What was forsen's rank in the leaked twitch earnings leaderboard?",
+    "answers": ["118", "1", "188", "81"],
+    "correctIndex": 0
+  },
+  {
+    "id": 89710,
+    "question": "What is something only the real forsen would say?",
+    "answers": [
+      "The Sopranos is my favorite TV show",
+      "I love Valorant",
+      "Nina and Peppah are well and alive",
+      "Buy an iPhone"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": 77157,
+    "question": "How many hours did Forsen stream for in 2021?",
+    "answers": ["1234", "1808", "1998", "2021"],
+    "correctIndex": 2
+  },
+  {
+    "id": 77158,
+    "question": "Which game attracted the most viewers to forsen's stream in 2021?<br>(on average)",
+    "answers": ["Jackbox Party Pack 7", "Minecraft", "Twelve Minutes", "GTA V"],
+    "correctIndex": 0
+  },
+  {
+    "id": 77159,
+    "question": "Top Forsen's clip of 2021 (by view count) is:",
+    "answers": [
+      "FORSEN PUTS THE JUICE IN THE FRIDGE AND LOCKS THE DOOR <i>(Minecraft)</i>",
+      "FeelsStrongMan finally <i>(Minecraft/funny TTS)</i>",
+      "Every Game <i>(Jump King)</i>",
+      "pepeLaugh <i>(Just Chatting/reactsen)</i>"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": 77160,
+    "question": "The longest forsen's stream in 2021 went on for how long?",
+    "answers": ["6.5 hrs", "6.9 hrs", "7.4 hrs", "8.3 hrs"],
+    "correctIndex": 3
+  },
+  {
+    "id": 77161,
+    "question": "The first game forsen played on stream in 2022 is:",
+    "answers": [
+      "Bro Falls: Ultimate Showdown",
+      "Teamfight Tactics",
+      "Barbie and the Magic of Pegasus",
+      "Clownfield 2042"
+    ],
+    "correctIndex": 3
+  }
 ]
