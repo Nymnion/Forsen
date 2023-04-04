@@ -113,7 +113,7 @@ body {
   
   /* Hero slider */
   .hero-slider {
-    width: 85%;
+    width: 100%;
     height: 500px; /* You can adjust the height as needed */
     overflow: hidden;
     position: relative;
