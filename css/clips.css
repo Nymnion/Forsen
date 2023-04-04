@@ -1,0 +1,22 @@
+#clips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clip {
+  margin: 10px;
+  width: 300px;
+}
+
+.clip img {
+  width: 100%;
+}
+
+.clip a {
+  display: block;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
