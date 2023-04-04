@@ -1,3 +1,12 @@
+const adviceFriend = document.createElement('div');
+adviceFriend.id = 'adviceFriend';
+adviceFriend.innerHTML = `
+<img src="images/pepepains.png" width="100" height="100">
+<div class="advicePopup">
+  <div id="adviceText"></div>
+</div>
+`;
+
 document.addEventListener('DOMContentLoaded', function () {
   const lines = [
     { url: 'https://github.com/badoge/soundboard/blob/master/forsen/10lines/2fast5me.mp3?raw=true', line: '2fast5me' },
@@ -1994,7 +2003,22 @@ document.addEventListener('DOMContentLoaded', function () {
       audio.pause();
     }
     audio = new Audio(randomLine.url);
+
+    // advice friend popup:
+    audio.addEventListener('play', () => {
+      document.getElementById('adviceFriend').classList.add('active');
+    });
+    audio.addEventListener('ended', () => {
+      document.getElementById('adviceFriend').classList.remove('active');
+    });
+
     audio.play();
-    document.getElementById('randomLineContainer').textContent = randomLine.line;
+    // attempt to cleanup line name
+    // todo: add proper transcriptions to lines maybe???
+    const transcript = randomLine.line.replace(/[0-9]+$/, '');
+    document.getElementById('adviceText').textContent = transcript;
   });
+
+  // inject adviceFriend into body
+  document.body.appendChild(adviceFriend);
 });
