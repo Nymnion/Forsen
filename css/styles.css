@@ -576,3 +576,13 @@ padding-top: 2%;
     margin-left: 1rem;
     /* add some space between the main content and the hover element */
 }
+
+.respec-eastereg {
+    margin-right: 20px;
+}
+
+.respec-eastereg img {
+    height: 32px;
+    width: auto;
+    vertical-align: middle;
+}
