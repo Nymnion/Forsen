@@ -1,128 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Time!!!</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <script defer src="js/main.js"></script>
     <script defer src="js/quiz.js"></script>
-</head>
+    <script src="js/easterEgg.js"></script>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <nav>
-            <ul class="nav-buttons">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-                <li><a href="clips.html">Clips</a></li>
-            </ul>
-        </nav>
 
-
-    
-
+      <nav>
+        <ul class="nav-buttons">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="clips.html">Clips</a></li>
+        </ul>
+      </nav>
 
     </header>
 
-
-
     <main>
-        <br><br><br>
- 
-        <h1>Forsen Quizzes</h1>
-
+      <br /><br /><br />
+      <center>
+        <h1>QUIZ</h1>
+        <img src="images/logo.png" width="20%" height="20%" max-width="10%" max-height="10%" />
 
         <div class="container">
-
-<center>
-
-    <h2>Music Quiz</h2>
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kihLBf9W7nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        </center>
+          <h2>Music Quiz</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/kihLBf9W7nc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
+      </center>
 
- 
-            <div class="container">
-
-                <h2>Knowledge Quiz</h2>
+      <div class="container">
+        <h2>Knowledge Quiz</h2>
         <div class="quiz-container">
-
-
-
-
-            <div id="quiz"></div>
-            </div><br><br>
-            <button id="previous">Previous Question</button>
-            <button id="next">Next Question</button>
-            <button id="submit">Submit Quiz</button>
-            <div id="results"></div>
-
-        </div>        </div>
-
-
-
-
-
+          <div id="quiz"></div>
+        </div>
+        <br /><br />
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
+      </div>
     </main>
 
-
-
     <center>
+      <div class="line-container">
+        <script src="js/lines.js"></script>
+        <button id="randomLineButton" class="line-button">
+          <img src="images/pepepains.png" />
+        </button>
+        <p id="randomLineContainer"></p>
+      </div>
 
-        <div class="line-container">
-            <script src="js/lines.js"></script>
-            <button id="randomLineButton" class="line-button">
-           <img src="images/pepepains.png"></button>
-            <p id="randomLineContainer"></p>
+      <div class="chat">
+        <iframe
+          id="twitch-chat-embed"
+          src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site"
+          height="96%"
+          width="92%"
+        >
+        </iframe>
+      </div>
+
+      <footer>
+        <div class="socials">
+          <a href="index.html">HOME</a>
+          <br />
+
+          <h3>Follow Forsen on:</h3>
+          <ul>
+            <li>
+              <a href="https://twitter.com/Forsen" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
+            </li>
+            <li>
+              <a href="https://www.twitch.tv/forsen" target="_blank"> <i class="fab fa-twitch"></i> Twitch </a>
+            </li>
+            <li>
+              <a href="https://www.onlyfors.com" target="_blank"> <i class="fab fa-onlyfans"></i> OnlyFans </a>
+            </li>
+          </ul>
         </div>
-
-
-<div class="chat">
-    
-    <iframe id="twitch-chat-embed"
-    src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site"
-    height="96%"
-    width="92%">
-</iframe>
-
-
-</div>
-
-
-        <footer>
-            <div class="socials">
-                <a href="index.html">HOME</a>
-                <br>
-
-                <h3>Follow Forsen on:</h3>
-                <ul>
-                    <li>
-                        <a href="https://twitter.com/Forsen" target="_blank">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitch.tv/forsen" target="_blank">
-                            <i class="fab fa-twitch"></i> Twitch
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.onlyfors.com" target="_blank">
-                            <i class="fab fa-onlyfans"></i> OnlyFans
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
+      </footer>
     </center>
-
-</body>
-
+  </body>
 </html>
