@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz Time!!!</title>
+    <title>Twitch Clips</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/clips.css" />
     <script defer src="js/main.js"></script>
-    <script defer src="js/quiz.js"></script>
-    <script src="js/easterEgg.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/clips.js"></script>
   </head>
 
   <body>
@@ -28,36 +26,19 @@
 
     <main>
       <br /><br /><br />
-      <center>
-        <h1>QUIZ</h1>
-        <img src="images/logo.png" width="20%" height="20%" max-width="10%" max-height="10%" />
-
-        <div class="container">
-          <h2>Music Quiz</h2>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/kihLBf9W7nc"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </center>
-
-      <div class="container">
-        <h2>Knowledge Quiz</h2>
-        <div class="quiz-container">
-          <div id="quiz"></div>
-        </div>
-        <br /><br />
-        <button id="previous">Previous Question</button>
-        <button id="next">Next Question</button>
-        <button id="submit">Submit Quiz</button>
-        <div id="results"></div>
-      </div>
+      <h2>Forsen's most popular clips this month</h2>
+      <div class="container" id="clips"></div>
     </main>
+
+    <div class="chat">
+      <iframe
+        id="twitch-chat-embed"
+        src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site"
+        height="96%"
+        width="92%"
+      >
+      </iframe>
+    </div>
 
     <center>
       <div class="line-container">
@@ -66,16 +47,6 @@
           <img src="images/pepepains.png" />
         </button>
         <p id="randomLineContainer"></p>
-      </div>
-
-      <div class="chat">
-        <iframe
-          id="twitch-chat-embed"
-          src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site"
-          height="96%"
-          width="92%"
-        >
-        </iframe>
       </div>
 
       <footer>
