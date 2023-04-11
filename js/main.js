@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
       // update position with cursor's current x/y
       node.style.top = `${event.clientY - nodeRelativeOffset.y}px`;
       node.style.left = `${event.clientX - nodeRelativeOffset.x}px`;
+      // force remove interfering css properties
+      node.style.right = 'unset';
+      node.style.bottom = 'unset';
     });
   }
   // fix "not-allowed" cursor during interaction:
