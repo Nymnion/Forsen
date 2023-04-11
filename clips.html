@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twitch Clips</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/clips.css" />
-    <script defer src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/clips.js"></script>
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul class="nav-buttons">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="quiz.html">Quiz</a></li>
-          <li><a href="clips.html">Clips</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twitch Clips</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/clips.css" />
+  <script defer src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/clips.js"></script>
+</head>
 
-    <main>
-      <br /><br /><br />
-      <h2>Forsen's most popular clips this month</h2>
-      <div class="container" id="clips"></div>
-    </main>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-buttons">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="clips.html">Clips</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="chat">
-      <iframe
-        id="twitch-chat-embed"
-        src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site"
-        height="96%"
-        width="92%"
-      >
-      </iframe>
+  <main>
+    <br /><br /><br />
+    <h2>Forsen's most popular clips this month</h2>
+    <div class="container" id="clips"></div>
+  </main>
+
+  <div class="chat">
+    <iframe id="twitch-chat-embed" src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site" height="96%"
+      width="92%">
+    </iframe>
+  </div>
+
+  <center>
+    <div class="line-container draggable">
+      <script src="js/lines.js"></script>
+      <button id="randomLineButton" class="line-button">
+        <img src="images/pepepains.png" />
+      </button>
+      <p id="randomLineContainer"></p>
     </div>
 
-    <center>
-      <div class="line-container draggable">
-        <script src="js/lines.js"></script>
-        <button id="randomLineButton" class="line-button">
-          <img src="images/pepepains.png" />
-        </button>
-        <p id="randomLineContainer"></p>
+    <footer>
+      <div class="socials">
+        <a href="index.html">HOME</a>
+        <br />
+
+        <h3>Follow Forsen on:</h3>
+        <ul>
+          <li>
+            <a href="https://twitter.com/Forsen" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
+          </li>
+          <li>
+            <a href="https://www.twitch.tv/forsen" target="_blank"> <i class="fab fa-twitch"></i> Twitch </a>
+          </li>
+          <li>
+            <a href="https://www.onlyfors.com" target="_blank"> <i class="fab fa-onlyfans"></i> OnlyFans </a>
+          </li>
+        </ul>
       </div>
+    </footer>
+  </center>
+</body>
 
-      <footer>
-        <div class="socials">
-          <a href="index.html">HOME</a>
-          <br />
-
-          <h3>Follow Forsen on:</h3>
-          <ul>
-            <li>
-              <a href="https://twitter.com/Forsen" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
-            </li>
-            <li>
-              <a href="https://www.twitch.tv/forsen" target="_blank"> <i class="fab fa-twitch"></i> Twitch </a>
-            </li>
-            <li>
-              <a href="https://www.onlyfors.com" target="_blank"> <i class="fab fa-onlyfans"></i> OnlyFans </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </center>
-  </body>
 </html>
