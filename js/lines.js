@@ -1,7 +1,6 @@
 const adviceFriend = document.createElement('div');
 adviceFriend.id = 'adviceFriend';
 adviceFriend.innerHTML = `
-<img src="images/pepepains.png" width="100" height="100">
 <div class="advicePopup">
   <div id="adviceText"></div>
 </div>
@@ -2020,5 +2019,14 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // inject adviceFriend into body
-  document.body.appendChild(adviceFriend);
+  const adviceFriendParent = document.getElementById('randomLineButton');
+  if (adviceFriendParent) adviceFriendParent.appendChild(adviceFriend);
+
+  // fix: flip button and advicePopup if dragged to the right side of screen
+  adviceFriendParent.parentNode.addEventListener('drag', (event) => {
+    // detect if out of bounds
+    if (!event.clientX) return;
+    // toggle "flipped" class based on which side we're on
+    adviceFriendParent.classList.toggle('flipped', event.clientX > window.innerWidth / 2);
+  });
 });
