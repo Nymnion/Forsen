@@ -119,7 +119,7 @@ header {
   border-radius: 0 0 50px 50px;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 50;
 }
 
@@ -132,8 +132,19 @@ header a:hover {
   color: #3498db;
 }
 
+/* best responsive design 2023 */
 main {
   margin-top: 6rem;
+}
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 8rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  main {
+    margin-top: 10rem;
+  }
 }
 
 /* Hero slider */
@@ -399,19 +410,21 @@ footer {
 
 /* Navigation Styles */
 nav {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .nav-buttons {
+  width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 .nav-buttons li {
   margin: 0 10px;
+  display: inline-block;
 }
 
 .nav-buttons a {
