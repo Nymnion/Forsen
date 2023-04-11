@@ -2,7 +2,7 @@
  * Image gallery logic:
  */
 const timeout = 5000;
-const sliderImages = document.querySelectorAll('.hero-slider img');
+const sliderImages = document.querySelectorAll('.hero-slider picture');
 const sliderControls = document.querySelectorAll('.hero-slider-control');
 let currentSlide = 0;
 let interval;

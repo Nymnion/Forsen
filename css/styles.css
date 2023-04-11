@@ -146,16 +146,20 @@ main {
   align-items: center;
 }
 
-.hero-slider img {
+.hero-slider picture {
   width: 100%;
   height: 100%;
   position: absolute;
   opacity: 0;
   transition: opacity 1s;
+}
+.hero-slider picture img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.hero-slider img.active {
+.hero-slider picture.active {
   opacity: 1;
 }
 
