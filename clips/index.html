@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clips | Forsen</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clips | Forsen</title>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css/clips.css" />
+  </head>
 
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
-  <link rel="stylesheet" href="/css/clips.css" />
-</head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-buttons">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/quiz">Quiz</a></li>
+          <li><a href="/clips">Clips</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <ul class="nav-buttons">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/quiz">Quiz</a></li>
-        <li><a href="/clips">Clips</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <h2>Forsen's most popular clips this month</h2>
+      <div class="container" id="clips"></div>
+    </main>
 
-  <main>
-    <h2>Forsen's most popular clips this month</h2>
-    <div class="container" id="clips"></div>
-  </main>
+    <footer>
+      <div class="socials">
+        <h3>Follow Forsen on:</h3>
+        <ul>
+          <li>
+            <a href="https://twitter.com/Forsen" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+          </li>
+          <li>
+            <a href="https://www.twitch.tv/forsen" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
+          </li>
+          <li>
+            <a href="https://www.onlyfors.com" target="_blank">OnlyFans</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-  <footer>
-    <div class="socials">
-      <h3>Follow Forsen on:</h3>
-      <ul>
-        <li>
-          <a href="https://twitter.com/Forsen" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
-        </li>
-        <li>
-          <a href="https://www.twitch.tv/forsen" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
-        </li>
-        <li>
-          <a href="https://www.onlyfors.com" target="_blank">OnlyFans</a>
-        </li>
-      </ul>
+    <!-- Random Lines -->
+    <div class="line-container draggable">
+      <button id="randomLineButton" class="line-button">
+        <img src="/images/pepepains.png" />
+      </button>
+      <p id="randomLineContainer"></p>
+      <script src="/js/lines.js"></script>
     </div>
-  </footer>
 
-  <!-- Random Lines -->
-  <div class="line-container draggable">
-    <button id="randomLineButton" class="line-button">
-      <img src="/images/pepepains.png" />
-    </button>
-    <p id="randomLineContainer"></p>
-    <script src="/js/lines.js"></script>
-  </div>
+    <!-- Twitch Chat -->
+    <div class="chat draggable">
+      <iframe id="chat-iframe" frameborder="0"></iframe>
+    </div>
 
-  <!-- Twitch Chat -->
-  <div class="chat draggable">
-    <iframe id="chat-iframe" frameborder="0"></iframe>
-  </div>
-
-  <!-- Script Imports -->
-  <script src="/js/global.js"></script>
-  <script src="/js/clips.js"></script>
-</body>
-
+    <!-- Script Imports -->
+    <script src="/js/global.js"></script>
+    <script src="/js/clips.js"></script>
+  </body>
 </html>

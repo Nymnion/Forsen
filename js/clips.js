@@ -1,10 +1,12 @@
-fetch('https://www.reddit.com/r/LivestreamFail/search.json?sort=top&q=flair%3Atwitch%3A%2BForsen&restrict_sr=on&t=month')
-  .catch(err => {
+fetch(
+  'https://www.reddit.com/r/LivestreamFail/search.json?sort=top&q=flair%3Atwitch%3A%2BForsen&restrict_sr=on&t=month',
+)
+  .catch((err) => {
     console.error(err);
-    document.querySelector('#clips').innerText = "Could not fetch clips :/";
+    document.querySelector('#clips').innerText = 'Could not fetch clips :/';
   })
-  .then(res => res.json())
-  .then(res => {
+  .then((res) => res.json())
+  .then((res) => {
     const clips = res.data.children;
     const topClips = clips
       .filter(function (clip) {
