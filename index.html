@@ -12,25 +12,21 @@
 </head>
 
 <body>
-  <center>
-    <header>
-      <nav>
-        <ul class="nav-buttons">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/quiz">Quiz</a></li>
-          <li><a href="/clips">Clips</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-  </center>
-  <!-- Image slider!!! -->
-  <center>
-    <br /><br /><br />
+  <header>
+    <nav>
+      <ul class="nav-buttons">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/quiz">Quiz</a></li>
+        <li><a href="/clips">Clips</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
     <h1>FORSEN</h1>
-    <img src="/images/logo.png" width="20%" height="20%" max-width="10%" max-height="10%" />
+    <img class="forsen-logo" src="/images/logo.png" />
 
     <div class="container">
       <div class="hero-slider">
@@ -50,7 +46,6 @@
         <img src="/images/forsen14.jpg" alt="Slide 14" />
         <img src="/images/forsen15.jpg" alt="Slide 15" />
         <img src="/images/forsen16.jpg" alt="Slide 16" />
-        <!-- Add more slides if needed -->
 
         <button class="hero-slider-control hero-slider-prev">
           <i class="fas fa-chevron-left"></i>
@@ -63,52 +58,52 @@
     </div>
 
     <div class="video-container">
-      <video controls autoplay muted loop style="width: 90%">
+      <video controls autoplay muted loop>
         <source src="/videos/forsen.webm" type="video/webm" />
         <source src="/videos/forsen.mp4" type="video/mp4" />
       </video>
     </div>
 
     <div class="video-container">
-      <video controls autoplay muted loop style="width: 90%">
+      <video controls autoplay muted loop>
         <source src="/videos/explain_nymn.webm" type="video/webm" />
         <source src="/videos/explain_nymn.mp4" type="video/mp4" />
       </video>
     </div>
-  </center>
-  <center>
-    <div class="line-container draggable">
-      <script src="/js/lines.js"></script>
-      <button id="randomLineButton" class="line-button">
-        <img src="/images/pepepains.png" />
-      </button>
-      <p id="randomLineContainer"></p>
-    </div>
-    <div class="chat draggable">
-      <iframe id="twitch-chat-embed" src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site" height="96%"
-        width="92%">
-      </iframe>
-    </div>
-    <footer>
-      <div class="socials">
-        <a href="/">HOME</a>
-        <br />
-        <h3>Follow Forsen on:</h3>
-        <ul>
-          <li>
-            <a href="https://twitter.com/Forsen" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
-          </li>
-          <li>
-            <a href="https://www.twitch.tv/forsen" target="_blank"> <i class="fab fa-twitch"></i> Twitch </a>
-          </li>
-          <li>
-            <a href="https://www.onlyfors.com" target="_blank"> <i class="fab fa-onlyfans"></i> OnlyFans </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </center>
+  </main>
 
+  <footer>
+    <div class="socials">
+      <h3>Follow Forsen on:</h3>
+      <ul>
+        <li>
+          <a href="https://twitter.com/Forsen" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.twitch.tv/forsen" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
+        </li>
+        <li>
+          <a href="https://www.onlyfors.com" target="_blank">OnlyFans</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Random Lines -->
+  <div class="line-container draggable">
+    <button id="randomLineButton" class="line-button">
+      <img src="/images/pepepains.png" />
+    </button>
+    <p id="randomLineContainer"></p>
+    <script src="/js/lines.js"></script>
+  </div>
+
+  <!-- Twitch Chat -->
+  <div class="chat draggable">
+    <iframe id="chat-iframe" frameborder="0"></iframe>
+  </div>
+
+  <!-- Script Imports -->
   <script src="/js/global.js"></script>
   <script src="/js/main.js"></script>
 </body>

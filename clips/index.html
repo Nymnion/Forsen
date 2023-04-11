@@ -26,47 +26,42 @@
   </header>
 
   <main>
-    <br /><br /><br />
     <h2>Forsen's most popular clips this month</h2>
     <div class="container" id="clips"></div>
   </main>
 
-  <div class="chat">
-    <iframe id="twitch-chat-embed" src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site" height="96%"
-      width="92%">
-    </iframe>
+  <footer>
+    <div class="socials">
+      <h3>Follow Forsen on:</h3>
+      <ul>
+        <li>
+          <a href="https://twitter.com/Forsen" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.twitch.tv/forsen" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
+        </li>
+        <li>
+          <a href="https://www.onlyfors.com" target="_blank">OnlyFans</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Random Lines -->
+  <div class="line-container draggable">
+    <button id="randomLineButton" class="line-button">
+      <img src="/images/pepepains.png" />
+    </button>
+    <p id="randomLineContainer"></p>
+    <script src="/js/lines.js"></script>
   </div>
 
-  <center>
-    <div class="line-container draggable">
-      <script src="/js/lines.js"></script>
-      <button id="randomLineButton" class="line-button">
-        <img src="/images/pepepains.png" />
-      </button>
-      <p id="randomLineContainer"></p>
-    </div>
+  <!-- Twitch Chat -->
+  <div class="chat draggable">
+    <iframe id="chat-iframe" frameborder="0"></iframe>
+  </div>
 
-    <footer>
-      <div class="socials">
-        <a href="/">HOME</a>
-        <br />
-
-        <h3>Follow Forsen on:</h3>
-        <ul>
-          <li>
-            <a href="https://twitter.com/Forsen" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
-          </li>
-          <li>
-            <a href="https://www.twitch.tv/forsen" target="_blank"> <i class="fab fa-twitch"></i> Twitch </a>
-          </li>
-          <li>
-            <a href="https://www.onlyfors.com" target="_blank"> <i class="fab fa-onlyfans"></i> OnlyFans </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </center>
-
+  <!-- Script Imports -->
   <script src="/js/global.js"></script>
   <script src="/js/clips.js"></script>
 </body>

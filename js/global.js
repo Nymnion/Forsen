@@ -67,3 +67,9 @@ function countTowardsEasterEgg() {
 function executeEasterEgg() {
   pepePainsButton.classList.add('animateEasterEgg');
 }
+
+/**
+ * Load chat with dynamic parent
+ */
+const iframeUrl = 'https://www.twitch.tv/embed/forsen/chat?parent=' + location.hostname;
+document.querySelector('#chat-iframe').setAttribute('src', iframeUrl);

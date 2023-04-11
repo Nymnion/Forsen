@@ -27,19 +27,15 @@
   </header>
 
   <main>
-    <br /><br /><br />
-    <center>
-      <h1>QUIZ</h1>
-      <img src="/images/logo.png" width="20%" height="20%" max-width="10%" max-height="10%" />
+    <h1>QUIZ</h1>
 
-      <div class="container">
-        <h2>Music Quiz</h2>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kihLBf9W7nc"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-      </div>
-    </center>
+    <div class="container">
+      <h2>Music Quiz</h2>
+      <iframe class="music-quiz" src="https://www.youtube-nocookie.com/embed/kihLBf9W7nc"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
 
     <div class="container">
       <h2>Knowledge Quiz</h2>
@@ -54,42 +50,38 @@
     </div>
   </main>
 
-  <center>
-    <div class="line-container draggable">
-      <script src="/js/lines.js"></script>
-      <button id="randomLineButton" class="line-button">
-        <img src="/images/pepepains.png" />
-      </button>
-      <p id="randomLineContainer"></p>
+  <footer>
+    <div class="socials">
+      <h3>Follow Forsen on:</h3>
+      <ul>
+        <li>
+          <a href="https://twitter.com/Forsen" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+        </li>
+        <li>
+          <a href="https://www.twitch.tv/forsen" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
+        </li>
+        <li>
+          <a href="https://www.onlyfors.com" target="_blank">OnlyFans</a>
+        </li>
+      </ul>
     </div>
+  </footer>
 
-    <div class="chat draggable">
-      <iframe id="twitch-chat-embed" src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site" height="96%"
-        width="92%">
-      </iframe>
-    </div>
+  <!-- Random Lines -->
+  <div class="line-container draggable">
+    <button id="randomLineButton" class="line-button">
+      <img src="/images/pepepains.png" />
+    </button>
+    <p id="randomLineContainer"></p>
+    <script src="/js/lines.js"></script>
+  </div>
 
-    <footer>
-      <div class="socials">
-        <a href="/">HOME</a>
-        <br />
+  <!-- Twitch Chat -->
+  <div class="chat draggable">
+    <iframe id="chat-iframe" frameborder="0"></iframe>
+  </div>
 
-        <h3>Follow Forsen on:</h3>
-        <ul>
-          <li>
-            <a href="https://twitter.com/Forsen" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
-          </li>
-          <li>
-            <a href="https://www.twitch.tv/forsen" target="_blank"> <i class="fab fa-twitch"></i> Twitch </a>
-          </li>
-          <li>
-            <a href="https://www.onlyfors.com" target="_blank"> <i class="fab fa-onlyfans"></i> OnlyFans </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </center>
-
+  <!-- Script Imports -->
   <script src="/js/global.js"></script>
 </body>
 
