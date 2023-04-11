@@ -1,15 +1,11 @@
 /* General styles */
 body {
-  background-color: #6787b5;
-
   background-color: #425877;
-  background-image: url('../images/bg.png');
+  background-image: url('/images/bg.png');
 
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   color: #333;
-  margin-top: 5rem;
-  cursor: url('../images/cursor_regular.png'), auto;
+  cursor: url('/images/cursor_regular.png'), auto;
 }
 
 a:hover,
@@ -17,7 +13,7 @@ a:hover,
 .contact-form button:hover,
 .line-button:hover,
 .contact-form input:hover {
-  cursor: url('../images/cursor_hover.png'), pointer;
+  cursor: url('/images/cursor_hover.png'), pointer;
 }
 
 h1 {
@@ -25,8 +21,7 @@ h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 62px;
   font-weight: 800;
-  line-height: 72px;
-  margin: 0 0 24px;
+  margin: 0px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -36,8 +31,7 @@ h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 27px;
   font-weight: 800;
-  line-height: 72px;
-  margin: 0 0 24px;
+  margin: 0px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -54,7 +48,17 @@ a {
   text-decoration: none;
 }
 
-.container {
+.forsen-logo {
+  width: 15%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.container,
+.video-container,
+.line-container,
+footer,
+.chat {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -62,7 +66,9 @@ a {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
+.container {
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
@@ -74,30 +80,19 @@ a {
 }
 
 .video-container {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
   padding: 20px;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 600px;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 1.5;
   color: #fff;
 }
+.video-container > video {
+  width: 100%;
+}
 
 .line-container {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
   padding: 20px;
   width: unset;
   font-family: 'Open Sans', sans-serif;
@@ -114,7 +109,6 @@ a {
 }
 
 /* Header */
-
 header {
   background-color: rgba(72, 82, 104, 0.5);
   backdrop-filter: blur(5.9px);
@@ -125,9 +119,8 @@ header {
   border-radius: 0 0 50px 50px;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 50;
-  /* This will ensure the header is displayed on top of other elements */
 }
 
 header a {
@@ -137,31 +130,47 @@ header a {
 
 header a:hover {
   color: #3498db;
-  /* Change this color to match Forsen's branding */
+}
+
+/* best responsive design 2023 */
+main {
+  margin-top: 6rem;
+}
+@media screen and (max-width: 600px) {
+  main {
+    margin-top: 8rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  main {
+    margin-top: 10rem;
+  }
 }
 
 /* Hero slider */
 .hero-slider {
   width: 100%;
   height: 500px;
-  /* You can adjust the height as needed */
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.hero-slider img {
+.hero-slider picture {
   width: 100%;
   height: 100%;
   position: absolute;
   opacity: 0;
   transition: opacity 1s;
+}
+.hero-slider picture img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  /* This will make sure the images maintain their aspect ratio and cover the slider area */
 }
 
-.hero-slider img.active {
+.hero-slider picture.active {
   opacity: 1;
 }
 
@@ -211,41 +220,6 @@ header a:hover {
 
 .social-links a:hover {
   color: #3498db;
-  /* Change this color to match Forsen's branding */
-}
-
-/* Contact page */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: 2rem auto;
-}
-
-.contact-form label {
-  margin-bottom: 0.5rem;
-}
-
-.contact-form input[type='text'],
-.contact-form input[type='email'],
-.contact-form textarea {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  width: 100%;
-}
-
-.contact-form button[type='submit'] {
-  background-color: #69a8d2;
-  /* Change this color to match Forsen's branding */
-  color: #fff;
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-.contact-form button[type='submit']:hover {
-  background-color: #789eb8;
-  /* Change this color to match Forsen's branding */
 }
 
 /* Quiz page */
@@ -346,18 +320,13 @@ header a:hover {
 }
 
 .table-forsen th {
-  background-color: #404040;
-  /* Adjust this color to match your website */
+  background-color: rgba(64, 64, 64, 0.8);
   color: #ffffff;
   font-weight: bold;
 }
 
-.table-forsen tr:nth-child(even) {
-  background-color: #575863;
-}
-
-.table-forsen tr:hover {
-  background-color: #ddd;
+.table-forsen tr:nth-child(odd) {
+  background-color: rgba(64, 64, 64, 0.4);
 }
 
 .line-button {
@@ -383,28 +352,22 @@ header a:hover {
 
 /* Footer Styles */
 footer {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   padding: 20px;
+  margin: 0px auto;
 }
 
 .socials {
   text-align: center;
-  margin-right: 20px;
 }
 
 .socials h3 {
   color: #fff;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -447,19 +410,21 @@ footer {
 
 /* Navigation Styles */
 nav {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 .nav-buttons {
+  width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 .nav-buttons li {
   margin: 0 10px;
+  display: inline-block;
 }
 
 .nav-buttons a {
@@ -484,11 +449,8 @@ nav {
 
 /* Style the form container */
 .contact-form {
-  max-width: 500px;
+  max-width: 80%;
   margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #f5f5f5;
 }
 
 /* Style the form fields */
@@ -507,6 +469,7 @@ nav {
   margin-bottom: 15px;
   box-sizing: border-box;
   font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Style the form submit button */
@@ -556,6 +519,11 @@ nav {
   z-index: 2;
 }
 
+.music-quiz {
+  width: 100%;
+  height: 400px;
+}
+
 .quiz-container {
   position: relative;
   height: 200px;
@@ -564,24 +532,15 @@ nav {
 
 .chat {
   position: fixed;
-  /* position the hover element relative to the container */
-  right: 1%;
-  /* place the hover element immediately after the main content */
-  top: 40%;
-  /* align the hover element at the top of the container */
-  width: 21%;
-  /* adjust the width of the hover element as needed */
+  bottom: 1em;
+  right: 1em;
+  width: 20%;
+  height: 40%;
   padding: 1rem;
-  padding-top: 2%;
-  height: 38%;
-  /* style the hover element, e.g., background-color, etc. */
-  background-color: #ddd;
-  background: rgba(255, 255, 255, 0.33);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.6px);
-  -webkit-backdrop-filter: blur(5.6px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.chat > iframe {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,115 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forsen</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+  </head>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Forsen</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <script defer src="js/main.js"></script>
-  <script src="js/easterEgg.js"></script>
-</head>
-
-<body>
-  <center>
+  <body>
     <header>
       <nav>
         <ul class="nav-buttons">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="quiz.html">Quiz</a></li>
-          <li><a href="clips.html">Clips</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/quiz">Quiz</a></li>
+          <li><a href="/clips">Clips</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
-  </center>
-  <!-- Image slider!!! -->
-  <center>
-    <br /><br /><br />
-    <h1>FORSEN</h1>
-    <img src="images/logo.png" width="20%" height="20%" max-width="10%" max-height="10%" />
 
-    <div class="container">
-      <div class="hero-slider">
-        <img src="images/forsen1.jpg" class="active" alt="Slide 1" />
-        <img src="images/forsen2.jpg" alt="Slide 2" />
-        <img src="images/forsen3.jpg" alt="Slide 3" />
-        <img src="images/forsen4.jpg" alt="Slide 4" />
-        <img src="images/forsen5.jpg" alt="Slide 5" />
-        <img src="images/forsen6.jpg" alt="Slide 6" />
-        <img src="images/forsen7.jpg" alt="Slide 7" />
-        <img src="images/forsen8.gif" alt="Slide 8" />
-        <img src="images/forsen9.jpg" alt="Slide 9" />
-        <img src="images/forsen10.jpg" alt="Slide 10" />
-        <img src="images/forsen11.jpg" alt="Slide 11" />
-        <img src="images/forsen12.jpg" alt="Slide 12" />
-        <img src="images/forsen13.jpg" alt="Slide 13" />
-        <img src="images/forsen14.jpg" alt="Slide 14" />
-        <img src="images/forsen15.jpg" alt="Slide 15" />
-        <img src="images/forsen16.jpg" alt="Slide 16" />
-        <!-- Add more slides if needed -->
+    <main>
+      <h1>FORSEN</h1>
+      <img class="forsen-logo" src="/images/logo.png" />
 
-        <button class="hero-slider-control hero-slider-prev">
-          <i class="fas fa-chevron-left"></i>
-        </button>
+      <div class="container">
+        <div class="hero-slider">
+          <picture class="active">
+            <source srcset="/images/slideshow/forsen1.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen1.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen1.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen2.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen2.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen2.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen3.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen3.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen3.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen4.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen4.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen4.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen5.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen5.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen5.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen6.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen6.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen6.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen7.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen7.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen7.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen8.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen8.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen8.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen9.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen9.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen9.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen10.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen10.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen10.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen11.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen11.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen11.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen12.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen12.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen12.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen13.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen13.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen13.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen14.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen14.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen14.jpg" />
+          </picture>
+          <picture>
+            <source srcset="/images/slideshow/forsen15.webp" type="image/webp" />
+            <source srcset="/images/slideshow/forsen15.jpg" type="image/jpeg" />
+            <img src="/images/slideshow/forsen15.jpg" />
+          </picture>
 
-        <button class="hero-slider-control hero-slider-next">
-          <i class="fas fa-chevron-right"></i>
-        </button>
+          <button class="hero-slider-control hero-slider-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <button class="hero-slider-control hero-slider-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div class="video-container">
-      <video controls autoplay muted loop style="width: 90%">
-        <source src="videos/forsen.webm" type="video/webm" />
-        <source src="videos/forsen.mp4" type="video/mp4" />
-      </video>
-    </div>
+      <div class="video-container">
+        <video controls autoplay muted loop>
+          <source src="/videos/forsen.webm" type="video/webm" />
+          <source src="/videos/forsen.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-    <div class="video-container">
-      <video controls autoplay muted loop style="width: 90%">
-        <source src="videos/explain_nymn.webm" type="video/webm" />
-        <source src="videos/explain_nymn.mp4" type="video/mp4" />
-      </video>
-    </div>
-  </center>
-  <center>
-    <div class="line-container draggable">
-      <script src="js/lines.js"></script>
-      <button id="randomLineButton" class="line-button">
-        <img src="images/pepepains.png" />
-      </button>
-      <p id="randomLineContainer"></p>
-    </div>
-    <div class="chat draggable">
-      <iframe id="twitch-chat-embed" src="https://www.twitch.tv/embed/forsen/chat?parent=forsen.site" height="96%"
-        width="92%">
-      </iframe>
-    </div>
+      <div class="video-container">
+        <video controls autoplay muted loop>
+          <source src="/videos/explain_nymn.webm" type="video/webm" />
+          <source src="/videos/explain_nymn.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </main>
+
     <footer>
       <div class="socials">
-        <a href="index.html">HOME</a>
-        <br />
         <h3>Follow Forsen on:</h3>
         <ul>
           <li>
-            <a href="https://twitter.com/Forsen" target="_blank"> <i class="fab fa-twitter"></i> Twitter </a>
+            <a href="https://twitter.com/Forsen" target="_blank"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
           </li>
           <li>
-            <a href="https://www.twitch.tv/forsen" target="_blank"> <i class="fab fa-twitch"></i> Twitch </a>
+            <a href="https://www.twitch.tv/forsen" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
           </li>
           <li>
-            <a href="https://www.onlyfors.com" target="_blank"> <i class="fab fa-onlyfans"></i> OnlyFans </a>
+            <a href="https://www.onlyfors.com" target="_blank">OnlyFans</a>
           </li>
         </ul>
       </div>
     </footer>
-  </center>
-</body>
 
+    <!-- Random Lines -->
+    <div class="line-container draggable">
+      <button id="randomLineButton" class="line-button">
+        <img src="/images/pepepains.png" />
+      </button>
+      <p id="randomLineContainer"></p>
+      <script src="/js/lines.js"></script>
+    </div>
+
+    <!-- Twitch Chat -->
+    <div class="chat draggable">
+      <iframe id="chat-iframe" frameborder="0"></iframe>
+    </div>
+
+    <!-- Script Imports -->
+    <script src="/js/global.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
