@@ -5,11 +5,11 @@ const submitButton = document.getElementById('submit');
 const previousButton = document.getElementById('previous');
 const nextButton = document.getElementById('next');
 const quizTimer = document.getElementById('quiz-timer');
-const quizStart = document.getElementById('quiz-start-button')
-const quizContainerContainer = document.getElementById('quiz-container2')
+const quizStart = document.getElementById('quiz-start-button');
+const quizContainerContainer = document.getElementById('quiz-container2');
 
 // has the quiz been started?
-let hasStartedQuiz = false
+let hasStartedQuiz = false;
 
 // slide control
 let currentSlide = 0;
@@ -30,37 +30,37 @@ const RANKS = {
   30: 'Knowledgeable (30%)',
   50: 'Frequenter (50%)',
   75: 'Almost-Certified Baj (75%)',
-  100: 'Certified Baj (100%!)'
-}
+  100: 'Certified Baj (100%!)',
+};
 
 // when the quiz timer expires
 // it's a UNIX timestamp
 let quizTimerExpireAt = Number.MAX_SAFE_INTEGER;
 
 function getQuizRank(pct) {
-  let pcts = [100, 75, 50, 30, 15, 0]
-  for(p of pcts) {
-    if(pct >= p) return RANKS[p]
+  let pcts = [100, 75, 50, 30, 15, 0];
+  for (p of pcts) {
+    if (pct >= p) return RANKS[p];
   }
 }
 
 // every 250ms while the quiz is running
 function quizTick() {
-  quizTimer.innerHTML = `${Math.round((quizTimerExpireAt - Date.now()) / 1000)} seconds left`
+  quizTimer.innerHTML = `${Math.round((quizTimerExpireAt - Date.now()) / 1000)} seconds left`;
 
-  if(Date.now() > quizTimerExpireAt) {
-    quizTimer.innerHTML = `Out of time, -10 points!`
+  if (Date.now() > quizTimerExpireAt) {
+    quizTimer.innerHTML = `Out of time, -10 points!`;
 
-    if(quizPenaltyOnceCheck) return;
-    penalty += 10
-    quizPenaltyOnceCheck = true
+    if (quizPenaltyOnceCheck) return;
+    penalty += 10;
+    quizPenaltyOnceCheck = true;
   }
 }
 
 function startQuiz() {
-  if(hasStartedQuiz) return;
-  hasStartedQuiz = true
-  quizStart.innerHTML = "loading please wait"
+  if (hasStartedQuiz) return;
+  hasStartedQuiz = true;
+  quizStart.innerHTML = 'loading please wait';
 
   // fetch questions:
 
@@ -145,14 +145,14 @@ function startQuiz() {
 
       // After parsing is done, start the quiz
       showSlide(0);
-      quizTimerExpireAt = Date.now() + (30 * 1000)
+      quizTimerExpireAt = Date.now() + 30 * 1000;
 
       previousButton.style.display = 'none';
       nextButton.style.display = '';
       quizTimer.style.display = '';
 
       // Start quiz tick
-      tick = setInterval(quizTick, 250)
+      tick = setInterval(quizTick, 250);
 
       // Readjust quiz container height
       quizContainerContainer.style.height = '180px';
@@ -184,7 +184,7 @@ function showResults() {
   clearInterval(tick);
 
   // change next button
-  nextButton.innerHTML = "Next Question ► ";
+  nextButton.innerHTML = 'Next Question ► ';
 
   // keep track of user's answers
   let numCorrect = 0;
@@ -220,7 +220,11 @@ function showResults() {
 
   // show number of correct answers out of total
   const correctPct = Math.floor((100 * numCorrect) / myQuestions.length);
-  resultsContainer.innerHTML = `YOUR SCORE: ${numCorrect - penalty} | TIMER PENALTY: ${penalty}<br>YOUR RANK: ${getQuizRank(correctPct)}<br>(Rank depends on % of correct answers, it's not affected by score)`;
+  resultsContainer.innerHTML = `YOUR SCORE: ${
+    numCorrect - penalty
+  } | TIMER PENALTY: ${penalty}<br>YOUR RANK: ${getQuizRank(
+    correctPct,
+  )}<br>(Rank depends on % of correct answers, it's not affected by score)`;
 
   submitButton.style.display = 'none';
   previousButton.style.display = '';
@@ -240,8 +244,8 @@ function showSlide(n) {
   nextButton.disabled = isLastSlide;
 
   submitButton.style.display = !isLastSlide ? 'none' : '';
-  if(hasFinishedQuiz) submitButton.style.display = 'none';
-  
+  if (hasFinishedQuiz) submitButton.style.display = 'none';
+
   nextButton.style.display = isLastSlide ? 'none' : '';
 }
 
@@ -256,15 +260,15 @@ function showNextSlide() {
   const isAbleToContinue = doCheckIfAnswerSubmitted();
   if (isAbleToContinue) showSlide(currentSlide + 1);
 
-  if(hasStartedQuiz && !hasFinishedQuiz) {
-    quizTimerExpireAt = Date.now() + (30 * 1000)
+  if (hasStartedQuiz && !hasFinishedQuiz) {
+    quizTimerExpireAt = Date.now() + 30 * 1000;
 
     quizPenaltyOnceCheck = false;
   }
 }
 
 function showPreviousSlide() {
-  if(!hasFinishedQuiz) return;
+  if (!hasFinishedQuiz) return;
 
   showSlide(currentSlide - 1);
 }
@@ -274,7 +278,7 @@ previousButton.addEventListener('click', showPreviousSlide);
 nextButton.addEventListener('click', showNextSlide);
 submitButton.addEventListener('click', showResults);
 
-quizStart.addEventListener('click', startQuiz)
+quizStart.addEventListener('click', startQuiz);
 
 // hide buttons until questions are loaded
 hideQuizButtons();

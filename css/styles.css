@@ -687,7 +687,7 @@ nav {
   border-width: 1px;
   margin: 1.7em;
   padding: 20px 0;
-  border-color:#93c9eb;
+  border-color: #93c9eb;
   color: white;
   font-size: 1.2em;
   box-shadow: rgba(0, 0, 0, 0.33) 0px 6px 6px;
@@ -696,11 +696,11 @@ nav {
 .quiz-button:hover {
   background-color: rgba(90, 112, 136, 0.8);
 }
-.answers>label>input {
+.answers > label > input {
   height: 20px;
   width: 20px;
   top: 3px;
-  position: relative; 
+  position: relative;
 }
 .quiz-timer {
   text-align: center;

@@ -78,7 +78,7 @@ document.querySelector('#chat-iframe').setAttribute('src', iframeUrl);
  *
  * change this when the unban date will be known
  */
-const banDate = new Date('2023-04-20T16:29:30');
+const banDate = new Date('2023-04-20T13:29:30Z');
 const banTimer = document.getElementById('banTimer');
 if (banTimer) {
   setInterval(() => {
