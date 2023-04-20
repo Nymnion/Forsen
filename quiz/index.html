@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz | Forsen</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
 
@@ -42,15 +41,25 @@
 
       <div class="container">
         <h2>Knowledge Quiz</h2>
-        <div class="quiz-container">
+        <div class="quiz-container" id="quiz-container2">
+          <h3 class="quiz-timer" id="quiz-timer">- seconds left</h3>
           <div id="quiz">
-            <div class="quiz-loader">Loading questions...</div>
+            <div class="quiz-loader">
+              <h4>TAKE THE QUIZ</h4>
+              <p>You'll have 30 seconds to answer each question.</p>
+              <p>If you don't answer in time, -10 points!</p>
+              <p>You get 1 point for each correct answer</p>
+              <p>Good luck!</p>
+              <button class="quiz-button" id="quiz-start-button">Start</button>
+            </div>
           </div>
         </div>
         <br /><br />
-        <button id="previous">◄ Previous Question</button>
-        <button id="next">Next Question ►</button>
-        <button id="submit"><b>Submit Quiz</b></button>
+        <div class="quiz-buttons">
+          <button class="quiz-button" id="previous">◄ Previous Question</button>
+          <button class="quiz-button" id="next">Lock Answer & Submit ►</button>
+          <button class="quiz-button" id="submit"><b>Submit Quiz</b></button>
+        </div>
         <div id="results"></div>
       </div>
     </main>
