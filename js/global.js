@@ -73,3 +73,25 @@ function executeEasterEgg() {
  */
 const iframeUrl = 'https://www.twitch.tv/embed/forsen/chat?parent=' + location.hostname;
 document.querySelector('#chat-iframe').setAttribute('src', iframeUrl);
+
+/* Forsen ban countdown (upwards)
+ *
+ * change this when the unban date will be known
+ */
+const banDate = new Date('2023-04-20T16:29:30');
+const banTimer = document.getElementById('banTimer');
+if (banTimer) {
+  setInterval(() => {
+    const diff = new Date().getTime() - banDate.getTime();
+
+    const ss = Math.floor(diff / 1000);
+    const mm = Math.floor(ss / 60);
+    const hh = Math.floor(mm / 60);
+    const dd = Math.floor(hh / 24);
+
+    let text = [hh % 24, mm % 60, ss % 60].map((n) => String(n).padStart(2, '0')).join(':');
+    if (dd >= 1) text = dd + 'd ' + text;
+
+    banTimer.innerText = text;
+  }, 1000);
+}
