@@ -12,7 +12,7 @@
     <script defer src="/js/quiz.js"></script>
   </head>
 
-  <body>
+  <body class="despair">
     <header>
       <nav>
         <ul class="nav-buttons">
@@ -84,6 +84,12 @@
     <!-- Twitch Chat -->
     <div class="chat draggable">
       <iframe id="chat-iframe" frameborder="0"></iframe>
+    </div>
+
+    <!-- Ban timer -->
+    <div class="ban-timer container draggable">
+      <div>Forsen has been banned for:</div>
+      <div id="banTimer">...</div>
     </div>
 
     <!-- Script Imports -->

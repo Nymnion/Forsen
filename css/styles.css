@@ -18,6 +18,7 @@ a:hover,
 
 h1 {
   color: #ffffff;
+  text-shadow: 0px 0px 24px #425877;
   font-family: 'Raleway', sans-serif;
   font-size: 62px;
   font-weight: 800;
@@ -646,4 +647,31 @@ nav {
   .advicePopup {
     font-size: 1.2rem;
   }
+}
+
+.ban-timer {
+  right: 1%;
+  bottom: 1%;
+  text-align: center;
+}
+#banTimer {
+  font-size: 180%;
+  font-weight: bold;
+  color: #ddd;
+  text-shadow: 0px 0px 2px black;
+}
+
+/* apply this on "body" whenever forsen gets banned */
+/* ...yes, this is not the last time that'll happen */
+.despair {
+  background-color: #161616;
+  cursor: url('/images/cursor_despair.png'), auto;
+}
+
+.despair .chat {
+  display: none;
+}
+
+.despair .ban-timer {
+  display: unset;
 }
