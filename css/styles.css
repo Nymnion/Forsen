@@ -676,6 +676,10 @@ nav {
   display: unset;
 }
 
+body:not(.despair) .ban-timer {
+  display: none;
+}
+
 /* Quiz stuff */
 .quiz-buttons {
   display: flex;

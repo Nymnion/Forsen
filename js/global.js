@@ -76,22 +76,36 @@ document.querySelector('#chat-iframe').setAttribute('src', iframeUrl);
 
 /* Forsen ban countdown (upwards)
  *
- * change this when the unban date will be known
+ * is now confirmed - 1 week ban
+ * timer counts down to an estimated unban timestamp
  */
 const banDate = new Date('2023-04-20T14:29:55.000Z');
-const banTimer = document.getElementById('banTimer');
-if (banTimer) {
-  setInterval(() => {
-    const diff = new Date().getTime() - banDate.getTime();
 
-    const ss = Math.floor(diff / 1000);
-    const mm = Math.floor(ss / 60);
-    const hh = Math.floor(mm / 60);
-    const dd = Math.floor(hh / 24);
+const unbanDate = new Date(banDate.valueOf());
+unbanDate.setDate(unbanDate.getDate() + 7); // 1 week ban
 
-    let text = [hh % 24, mm % 60, ss % 60].map((n) => String(n).padStart(2, '0')).join(':');
-    if (dd >= 1) text = dd + 'd ' + text;
+if (unbanDate > new Date()) {
+  document.body.classList.add('despair');
 
-    banTimer.innerText = text;
-  }, 1000);
+  const banTimer = document.getElementById('banTimer');
+  if (banTimer) {
+    const banTimerInterval = setInterval(() => {
+      const diff = unbanDate.getTime() - new Date().getTime();
+
+      if (diff <= 0) {
+        clearInterval(banTimerInterval);
+        document.body.classList.remove('despair');
+      }
+
+      const ss = Math.floor(diff / 1000);
+      const mm = Math.floor(ss / 60);
+      const hh = Math.floor(mm / 60);
+      const dd = Math.floor(hh / 24);
+
+      let text = [hh % 24, mm % 60, ss % 60].map((n) => String(n).padStart(2, '0')).join(':');
+      if (dd >= 1) text = dd + 'd ' + text;
+
+      banTimer.innerText = text;
+    }, 1000);
+  }
 }
